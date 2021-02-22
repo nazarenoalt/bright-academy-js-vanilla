@@ -11,7 +11,7 @@
     function openCloseSidebar() {
         if(sidebar.style.display === 'none') {
             sidebar.style.display = 'block'
-        } else{
+        } else {
             sidebar.style.display = 'none'
         }
     }

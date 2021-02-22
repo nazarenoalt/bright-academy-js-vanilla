@@ -17,7 +17,7 @@
     margin-bottom: 30px;
 }
 
-.course-icon {
+.course-item {
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -26,22 +26,22 @@
     overflow: hidden;
 }
 /*Color of icons depending of level*/
-.course-icon.beginner {
+.course-item.beginner {
     background-color: var(--blue);
     border: 5px solid var(--blue-2);
 }
-.course-icon.elementary {
+.course-item.elementary {
     background-color: var(--orange);
     border: 5px solid var(--orange-2);
 }
-.course-icon span {
+.course-item span {
     line-height:100px;
     font-size: 3rem;
 }
-.course-icon img {
+.course-item img {
     width: 3rem;
 }
-.course-icon:hover {
+.course-item:hover {
     transform: scale(1.1);
 }
 .course-title {

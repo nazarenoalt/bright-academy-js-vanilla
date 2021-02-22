@@ -1,15 +1,20 @@
 const loginForm = document.querySelector('#login-form');
 const loginButton = document.querySelector('#login-button')
 const login_URL = 'http://gonza56d.pythonanywhere.com/api/users/login/';
+let xmlHttp = new XMLHttpRequest();
 
-loginButton.addEventListener('submit', (event) => {
-    
+loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    formData = new FormData(loginForm);
-    console.log(formData);
-    fetch(login_URL, {
-        method: 'POST',
-        body: formData
-    })
+    console.log('hola');
 
+    formData = new FormData(loginForm);
+    
+    xmlHttp.open("POST", login_URL, true); 
+    xmlHttp.setRequestHeader("Access-Control-Allow-Headers", "Accept");
+    xmlHttp.send(formData);
+    xmlHttp.onreadystatechange = function() {
+            if(xmlHttp.readyState == 4) {
+                alert(xmlHttp.responseText);
+            }
+        }
 })
