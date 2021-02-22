@@ -1,0 +1,21 @@
+/*formularies*/
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.form-container li label {
+    display: block;
+    text-align: center;
+}
+.submit-button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 30px auto;
+}
+input {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,47 @@
+/*General Settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    list-style: none;
+
+    /*Colors*/
+    --red: #e8303a;
+    --blue: #33a8dd;
+    --blue-2: #008aca;
+    --transparent-blue: #7cc7e9bb;
+    --transparent-blue-2: #7cc7e986;
+    --transparent-blue-3: #7cc7e957;
+    --orange: #ffa500;
+    --orange-2: #df7e00;
+    --transparent-orange: #0a0a0abb;
+    --transparent-orange-2: #ffa60086;
+    --transparent-orange-3: #f8a50a57;
+    --white: #ffffff;
+    --dark-blue: #2b357a;
+    --transparent-dark-blue: #2b357af8;
+    --black: #181818;
+}
+
+a{
+    color: var(--white);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr auto;
+    grid-template-areas: "header  header  header"
+                        "main    main    main   "
+                        "footer footer  footer";
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 30px 10px;
+}

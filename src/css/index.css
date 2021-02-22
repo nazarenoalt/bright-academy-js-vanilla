@@ -1,0 +1,13 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'sidebar.css';
+@import 'general.css';
+@import 'main-content.css';
+
+.hero-presentation div {
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 2rem;
+}
+

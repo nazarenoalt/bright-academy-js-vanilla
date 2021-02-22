@@ -1,0 +1,59 @@
+@import 'general.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'sidebar.css';
+@import 'main-content.css';
+
+.courses-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-content: center;
+
+}
+.course-container {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.course-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;  
+    transition: transform .2s;  
+    overflow: hidden;
+}
+/*Color of icons depending of level*/
+.course-icon.beginner {
+    background-color: var(--blue);
+    border: 5px solid var(--blue-2);
+}
+.course-icon.elementary {
+    background-color: var(--orange);
+    border: 5px solid var(--orange-2);
+}
+.course-icon span {
+    line-height:100px;
+    font-size: 3rem;
+}
+.course-icon img {
+    width: 3rem;
+}
+.course-icon:hover {
+    transform: scale(1.1);
+}
+.course-title {
+    font-weight: bold;
+}
+.course-date {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 687px) {
+
+    .courses-list {
+        grid-template-columns: repeat(3, 150px);
+    }
+}

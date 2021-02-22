@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="src/css/login.css">
+</head>
+
+<body>
+    
+    <!--Header charged since import.js-->
+    <header class="header" id="header" ></header>
+
+    <!--Main content-->
+    <section class="main-content">
+
+        <h2 class="title">Iniciar Sesion</h2>
+
+        <form class="signup-form form-container" id="login-form" method="post">
+            <ul>
+                <li>
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" class="input-text" id="id_username" name="username" required>
+                </li>
+                <li>
+                    <label for="username">Password</label>
+                    <input type="password" class="input-text" id="id_password" name="password" required>
+                </li>
+            </ul>
+            <button class="submit-button" type="submit" id="login-button">Iniciar Sesión</button>
+        </form>
+
+    </section>
+
+    <!--Sidebar charged since import.js-->
+    <section class="sidebar" id="sidebar"></section>
+
+    <!--Footer charged since import.js-->
+    <footer class="footer" id="footer" ></footer>
+
+    <script src="src/js/importElements.js"></script>
+    <script src="src/js/login.js"></script>
+</body>

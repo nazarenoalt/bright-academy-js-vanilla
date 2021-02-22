@@ -1,2 +1,2 @@
 # bright-academy
-Media platform to save and share digital version of courses to students of Bright Academy
+Media platform to save and share digital version of classes to students of Bright Academy

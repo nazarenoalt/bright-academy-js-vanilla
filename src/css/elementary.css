@@ -1,0 +1,19 @@
+@import 'general.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'sidebar.css';
+@import 'main-content.css';
+
+.course-box {
+    height: 75px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+.description {
+    top: 0;
+}
+.course-box img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}

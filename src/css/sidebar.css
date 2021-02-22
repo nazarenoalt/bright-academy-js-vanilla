@@ -1,0 +1,31 @@
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 252px;
+    background-color:var(--transparent-dark-blue);
+    box-shadow: 3px 0px 50px rgba(0,0,0,0.5);
+    padding: 15px;
+    transition: margin.5s;
+    overflow: hidden;
+}
+
+.sidebar-items {
+    list-style: none;
+    width: 80%;
+    font-size: 1.5em;
+    line-height: 2.5;
+    margin-left: 15px;
+}
+.sidebar-items li {
+    border-bottom: 1px solid var(--white);
+    transition: text-shadow .13s
+}
+.sidebar-items li:hover {
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+.sidebar-items a{
+    text-decoration: none;
+}

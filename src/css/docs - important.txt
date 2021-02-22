@@ -1,0 +1,29 @@
+                *************************************
+                *   THIS IS THE CSS DOCUMENTATION   *
+                *************************************
+
+***   Read calmly to understand better the order of CSS sheets   ***
+
+*BASICS*
+*
+* This order is made to make a modular use of CSS and HTML. It can be not
+* perfect or even it can have some errors,or not being the best way to make
+* a modular site, but the idea is make a different way starting with what I
+* know about. I hope this structure be a good option! if not, don't worry,
+* it's the first base of a page will be remaked in the future
+*
+*EACH CHANGE IN THE STRUCTURE MUST BE REWRITE IN THE DOCS
+
+*GENERAL*
+* In this sheet are written all the universal styles will be applicated in
+* all the pages. It contains:
+* -- universal settins (*) (html) (body)
+* -- variables
+* -- elements
+* -- body container (.container)
+* -- text styles
+*    -- title
+*    -- subtitle
+*    -- paragraph
+*    -- small
+*    -- etc..

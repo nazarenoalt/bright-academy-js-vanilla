@@ -4,80 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/index-m.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Bright Academy - Home</title>
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo-container">
-                <img src="assets/img/logo.jpg" alt="Bright Academy">
-            </div>
-            <div class="menu">
-            </div>
-        </header>
-        
-        <section class="main-content">
-            <article class="hero-presentation">
-                <h1 class="title">¡Bienvenido a Bright Academy!</h1>
-                <div>
-                    <span class="tag"> <a href="#">Inicia Sesión</a> </span> o
-                    <span class="tag"> <a href="#">Registrate</a> </span> <br>     
-                    para seguir aprendiendo
-                </div>
-            </article>
-
-            <article class="courses">
-                <h2  class="course subtitle">Nuestros Cursos</h2>
-
-                <div class="course-box">
-                        <img src="assets/img/beginners.jpg" alt="beginners">
-                        <span class="description">
-                        <h2>Beginners</h2>
-                        </span>
-                </div>
-                
-                <div class="course-box" >
-                        <img src="assets/img/elementary.jpg" alt="elementary">
-                    <span class="description">
-                    <h2>Elementary</h2>
-                    </span>
-                    </div>
-            </article>
-            
-           </section>
-        <section class="sidebar">
-            <ul class="sidebar-items">
-                <li>
-                    <a href="#">Mi Cuenta</a>
-                </li>
-                <li>
-                    <a href="#">Mis Cursos</a>
-                </li>
-                <li>
-                    <a href="#">Ajustes</a>
-                </li>
-            </ul>
     
-        </section>
-        <section class="footer">
-            <div class="first-footer box-footer">
-                        <h3>profesora Camelia Brignole</h3>
-                       <p>Direccion: Calle Falsa º123</p>
-                   
-                </ul>
+    <!--Header charged since import.js-->
+    <header class="header" id="header" ></header>
 
+    <!--Main content-->
+    <section class="main-content">
+        <article class="hero-presentation">
+            <h1 class="title">¡Bienvenido a Bright Academy!</h1>
+            <div>
+                <span class="tag"> <a href="login.html">Inicia Sesión</a> </span> o
+                <span class="tag"> <a href="signup.html">Registrate</a> </span> <br>     
+                para seguir aprendiendo
             </div>
-            <div class="second-footer box-footer">
-                <ul>
-                        <li>
-                            <a href="#">Redes y Contacto</a>
-                        </li>
-                        
-                </ul>
+        </article>
+
+        <article class="courses">
+            <h2  class="course subtitle">Nuestros Cursos</h2>
+
+            <div class="course-box">
+                <a href="beginners.html">
+                    <img src="assets/img/beginners.jpg" alt="beginners">
+                    <span class="description">
+                        <h2>Beginners</h2>
+                    </span>
+                </a>
             </div>
             
-        </section>
-    </div>
+            <div class="course-box" >
+                <a href="elementary.html">
+                    <img src="assets/img/elementary.jpg" alt="elementary">
+                    <span class="description">
+                        <h2>Elementary</h2>
+                    </span>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <!--Sidebar charged since import.js-->
+    <section class="sidebar" id="sidebar"></section>
+
+    <!--Footer charged since import.js-->
+    <footer class="footer" id="footer" ></footer>
+
+    <script src="src/js/importElements.js"></script>
 </body>
-</html>

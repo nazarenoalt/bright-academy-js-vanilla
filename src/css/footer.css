@@ -1,0 +1,44 @@
+/*Footer*/
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--red);
+    grid-template-areas: "first-footer first-footer"
+                         "second-footer second-footer";
+    gap: 10px;
+    padding: 15px;
+    color: var(--white);
+}
+
+.first-footer {
+    grid-area: first-footer; 
+    list-style: none;
+}
+
+.second-footer {
+    grid-area: second-footer;
+}
+
+.box-footer {
+    font-size: .8rem;
+    padding-left: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+.box-footer ul {
+    list-style:none
+}
+.box-footer a {
+    font-weight: bold;
+    color: var(--white);
+}
+.box-footer a:visited {
+    color: var(--white);
+}
+.leyenda {
+    grid-area: leyenda;
+    text-align: center;
+    
+}
