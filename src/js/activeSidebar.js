@@ -1,15 +1,17 @@
-export default function activeSidebar() {
-    const menu = document.getElementById('menu');
     const sidebarElement = document.getElementById('sidebar');
+    sidebar.style.display = 'none'
+
+    console.log('test')
     
-    menu.onclick(openCloseSidebar);
+    window.addEventListener('load', () => {
+        const menu = document.querySelector('#menu')
+        menu.onclick = openCloseSidebar;
+    })
     
     function openCloseSidebar() {
-        console.log('hola')
-    /*     if(sidebar.style.display === 'none') {
+        if(sidebar.style.display === 'none') {
             sidebar.style.display = 'block'
         } else{
             sidebar.style.display = 'none'
-        } */
+        }
     }
-}
