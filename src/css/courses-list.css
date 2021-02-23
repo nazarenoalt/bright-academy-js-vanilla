@@ -11,7 +11,9 @@
     justify-content: center;
 
 }
+
 .course-container {
+    display: inline-block;
     font-size: 1.5rem;
     text-align: center;
     margin: 0px 30px 30px;
@@ -31,25 +33,42 @@
     background-color: var(--blue);
     border: 5px solid var(--blue-2);
 }
+
 .course-item.elementary {
     background-color: var(--orange);
     border: 5px solid var(--orange-2);
+}
+.course-item.elementary-kids {
+    background-color: var(--green);
+    border: 5px solid var(--green-2);
 }
 .course-item span {
     line-height:100px;
     font-size: 3rem;
 }
+
 .course-item img {
     width: 3rem;
 }
+
 .course-item:hover {
     transform: scale(1.1);
 }
+
 .course-title {
     font-weight: bold;
 }
+
 .course-date {
     font-size: 1rem;
+}
+
+.course-row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: center;
 }
 
 @media screen and (min-width: 500px) {
