@@ -6,15 +6,15 @@
 
 .courses-list {
     width: 100%;
-    display: grid;
-    grid-template-columns: 150px 150px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
 }
 .course-container {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0px 30px 30px;
 }
 
 .course-item {
@@ -25,6 +25,7 @@
     transition: transform .2s;  
     overflow: hidden;
 }
+
 /*Color of icons depending of level*/
 .course-item.beginner {
     background-color: var(--blue);
@@ -51,9 +52,9 @@
     font-size: 1rem;
 }
 
-@media screen and (min-width: 687px) {
-
+@media screen and (min-width: 500px) {
     .courses-list {
-        grid-template-columns: repeat(3, 150px);
+        width: 80%;
+        max-width: 628px;
     }
 }
