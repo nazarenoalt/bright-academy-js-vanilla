@@ -34,4 +34,11 @@
     .menu {
         display: none;
     }
+    .logo-container {
+        margin: 0 auto;
+    }
+    .header {
+        grid-template-columns: 1fr;
+
+    }
 }
