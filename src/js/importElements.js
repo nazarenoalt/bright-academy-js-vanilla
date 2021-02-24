@@ -16,3 +16,4 @@ chargeHTMLElements('/src/layouts/sidebar.html', sidebar);
 }
 
 importElements();
+import {openCloseSidebar} from "./sidebar.js";

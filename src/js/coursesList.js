@@ -1,7 +1,7 @@
 const coursesContainer = document.getElementById('courses-list');
 const HTMLCollectionCourses = document.getElementsByClassName('course-container');
 const arrayCourses = []; //initializing array
-const mediaQuery = window.matchMedia( 'only screen (max-width: 500px)' );
+const mediaQuery = window.matchMedia( 'only screen and (max-width: 500px)' );
 //transfer all HTMLcollectionCourses content to arrayCourses
 for(let i = 0; i < HTMLCollectionCourses.length; i++) {
     arrayCourses.unshift(HTMLCollectionCourses[i])
