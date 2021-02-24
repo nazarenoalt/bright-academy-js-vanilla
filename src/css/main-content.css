@@ -107,8 +107,7 @@
 @media screen and (min-width: 1024px) {
 
     .course-box {
-        margin: 70px;
-        margin-bottom: 20px;
+        margin: 50px 30px;
     }
     
 }

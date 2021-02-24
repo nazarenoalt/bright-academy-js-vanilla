@@ -11,7 +11,14 @@
     transition: margin.5s;
     overflow: hidden;
 }
-
+.sidebar-desktop {
+    width: 270px;
+    display: block;
+    position: fixed;
+    left: initial;
+    right: 0;
+    background-color:var(--dark-blue);
+}
 .sidebar-items {
     list-style: none;
     width: 80%;

@@ -2,4 +2,18 @@
 @import 'footer.css';
 @import 'sidebar.css';
 @import 'general.css';
-@import 'formulary.css'
+@import 'formulary.css';
+
+@media screen and (min-width: 1024px) {
+    
+    .container {
+        grid-template-columns: 1fr 1fr 270px;
+        grid-template-areas: "header  header  header"
+                            "main    main    main"
+                            "footer footer  footer";
+    }
+    .sidebar {
+        display: none;
+    }
+
+}

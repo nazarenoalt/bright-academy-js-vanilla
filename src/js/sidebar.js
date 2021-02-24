@@ -1,5 +1,11 @@
     const sidebarElement = document.getElementById('sidebar');
-    sidebar.style.display = 'none'
+    const mediaQuery = window.matchMedia('screen and (min-width: 1024px)');
+
+    if(mediaQuery.matches) {
+        sidebar.classList.add('sidebar-desktop');
+    } else {
+        sidebar.style.display = 'none'
+    }
 
     console.log('test')
     

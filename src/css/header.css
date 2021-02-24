@@ -29,3 +29,9 @@
 .menu :hover  {
     filter: brightness(150%);
 }
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        display: none;
+    }
+}
