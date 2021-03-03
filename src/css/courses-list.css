@@ -4,6 +4,10 @@
 @import 'sidebar.css';
 @import 'main-content.css';
 
+.title {
+    margin: 70px 20px;
+    font-size: 2rem;
+}
 .courses-list {
     width: 100%;
     display: flex;
@@ -64,19 +68,12 @@
 }
 
 /*course-row is added to divs containers in coursesList.js*/
-.course-row {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 700px;
-    justify-content: center;
-}
 .wrapped {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
-/*not-reversed is added to divs containers when the mediaQuery is less than 607px in coursesList.js to divs who has 4 items, to prevent disorder*/
-.order-1 {
-    order: 1;
-}
+
 @media screen and (min-width: 500px) {
     .courses-list {
         width: 80%;
