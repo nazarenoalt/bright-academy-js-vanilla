@@ -21,5 +21,3 @@
             sidebar.style.display = 'none'
         }
     }
-
-    export {openCloseSidebar};

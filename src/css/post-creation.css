@@ -1,0 +1,17 @@
+@import 'general.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'sidebar.css';
+@import 'main-content.css';
+
+#editor-container {
+    width: 80%;
+    height: 70%;
+    border: 1px solid gray;
+}
+#toolbar {
+    width: 80%;
+    height: 50px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
