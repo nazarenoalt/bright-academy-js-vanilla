@@ -12,9 +12,9 @@ function importElements() {
     }
 
     Promise.all([
-        chargeHTMLElements('/src/layouts/header.html', header),
-        chargeHTMLElements('/src/layouts/footer.html', footer),
-        chargeHTMLElements('/src/layouts/sidebar.html', sidebar),
+        chargeHTMLElements('https://nazarenoalt.github.io/bright-academy/src/layouts/header.html', header),
+        chargeHTMLElements('https://nazarenoalt.github.io/bright-academy/src/layouts/footer.html', footer),
+        chargeHTMLElements('https://nazarenoalt.github.io/bright-academy/src/layouts/sidebar.html', sidebar),
     ])
         .then(() => {
             document.body.classList.remove('loading');
