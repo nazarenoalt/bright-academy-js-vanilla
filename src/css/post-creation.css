@@ -4,35 +4,53 @@
 @import 'sidebar.css';
 @import 'main-content.css';
 
-.main-content {
-    display: block;
+
+.ql-editor {
+    height: 300px;
 }
 #editor-container {
     width: 100%;
+    height: 100%;
 }
+
 .post-info__container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
 }
-.post-info__container span {
+
+.span-title, .span-date {
     display: inline-block;
-}
-.post-info__container .span-title {
-    width: 70%;
-}
-.post-info__container .span-date {
-    width: 25%;
+    width: 95%;
+    margin-left: 10px;
 }
 
 .post-title {
-    display: inline-block;
     border: 1px solid #ccc;
     margin: 10px;
-    width: 80%;
+    width: 75%;
     outline: none;
 }
 .post-date {
     outline: none;
     margin: 10px;
+}
+.submit-button {
+    width: 50%;
+    height: 100px;
+    background-color: var(--dark-blue);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    border-radius: 15px;
+    transition: background-color .12s;
+}
+.submit-button:active {
+    background-color: var(--dark-blue-2);
+
 }

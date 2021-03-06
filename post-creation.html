@@ -19,21 +19,25 @@
 
     <!--Main content-->
     <section class="main-content">
+        <!--Post data container -->
         <div class="post-info__container">
             <span class="span-title">
                 <label for="post-title">Título:</label>
                 <input type="text" class="post-title" 
-                id="post-title">
+                id="post-title" name="title">
             </span>
             <span class="span-date">
                 <label for="post-title">Fecha:</label>
                 <input type="date" class="post-date" 
-                id="post-date">
+                id="post-date" name="date">
             </span>
         </div>
         
-        <div class="editor" id="editor-container">
-        </div>
+        <!--Post editor-->
+        <div class="editor" id="editor-container" name="content"></div>
+
+        <!--Submit Button-->
+        <button id="submit-button" class="submit-button" name="submit-button">Crear Clase</button>
     </section>
 
     <!--Sidebar charged since import.js-->
