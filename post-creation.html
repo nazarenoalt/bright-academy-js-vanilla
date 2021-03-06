@@ -19,25 +19,43 @@
 
     <!--Main content-->
     <section class="main-content">
-        <!--Post data container -->
-        <div class="post-info__container">
-            <span class="span-title">
-                <label for="post-title">Título:</label>
-                <input type="text" class="post-title" 
-                id="post-title" name="title">
-            </span>
-            <span class="span-date">
-                <label for="post-title">Fecha:</label>
-                <input type="date" class="post-date" 
-                id="post-date" name="date">
-            </span>
-        </div>
-        
-        <!--Post editor-->
-        <div class="editor" id="editor-container" name="content"></div>
+            <!--Post data container -->
+            <div class="post-data__container">
+                <span class="span-title">
+                    <label for="post-title">Título:</label>
+                    <input type="text" class="post-title" 
+                    id="post-title" name="title">
+                </span>
+                <span class="span-date">
+                    <label for="post-title">Fecha:</label>
+                    <input type="date" class="post-date" 
+                    id="post-date" name="date">
+                </span>
+            </div>
 
-        <!--Submit Button-->
-        <button id="submit-button" class="submit-button" name="submit-button">Crear Clase</button>
+            <!--Post editor-->
+            <div class="editor" id="editor-container" name="content"></div>
+
+            <!--Item creator-->
+            <h3> Diseña un item para la clase</h3>
+            <div class="item-creator">
+                <select class="selector" id="level-selector">
+                    <option value="1">easy</option>
+                    <option value="2">moderate</option>
+                    <option value="3">difficult</option>
+                </select>
+
+                <select class="selector" id="emoji-selector">
+                </select>
+                <div  class="item-background"></div>
+                <!--
+                    *Seleccionador de imagenes para los emojis
+                    *Seleccionador de color por nivel
+                -->
+            </div>
+            <!--Submit Button-->
+            <button id="submit-button" class="submit-button" name="submit-button">Crear Clase</button>
+        
     </section>
 
     <!--Sidebar charged since import.js-->
@@ -50,4 +68,6 @@
     <script src="src/js/importElements.js" type="module"></script>
     <script src="src/js/sidebar.js" type="module"></script>
     <script src="src/js/post-creation.js"></script>
+    <script src="src/js/create-icon.js"></script>
+
 </body>

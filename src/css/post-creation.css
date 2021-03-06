@@ -13,7 +13,7 @@
     height: 100%;
 }
 
-.post-info__container {
+.post-data__container {
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
@@ -38,8 +38,9 @@
     margin: 10px;
 }
 .submit-button {
-    width: 50%;
-    height: 100px;
+    width: 300px;
+    height: 170px;
+
     background-color: var(--dark-blue);
     outline: none;
     border: none;
@@ -50,7 +51,51 @@
     border-radius: 15px;
     transition: background-color .12s;
 }
+
+.selector {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 0 auto 15px;
+}
+
+.item-background {
+    width: 150px;
+    height: 150px;
+    background-color: var(--green);
+    border: 7px solid var(--green-2);
+    border-radius: 100%;
+}
 .submit-button:active {
     background-color: var(--dark-blue-2);
 
+}
+.item-background {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 500px ) {
+    .selector {
+        display: inline-block;
+        margin: 15px;
+    }
+}
+@media screen and (min-width:794px) {
+
+ #editor-container, .ql-toolbar {
+     min-width: 794px;
+     max-width: 85%;
+ }   
+ .post-data__container {
+    display: flex;
+    max-width: 85%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+@media screen and (min-width: 1024px) {
+    .ql-toolbar {
+        min-width: 85%;
+    }
 }
