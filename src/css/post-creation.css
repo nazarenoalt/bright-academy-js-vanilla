@@ -4,14 +4,35 @@
 @import 'sidebar.css';
 @import 'main-content.css';
 
-#editor-container {
-    width: 80%;
-    height: 70%;
-    border: 1px solid gray;
+.main-content {
+    display: block;
 }
-#toolbar {
+#editor-container {
+    width: 100%;
+}
+.post-info__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.post-info__container span {
+    display: inline-block;
+}
+.post-info__container .span-title {
+    width: 70%;
+}
+.post-info__container .span-date {
+    width: 25%;
+}
+
+.post-title {
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 10px;
     width: 80%;
-    height: 50px;
-    border: 1px solid gray;
-    border-collapse: collapse;
+    outline: none;
+}
+.post-date {
+    outline: none;
+    margin: 10px;
 }
