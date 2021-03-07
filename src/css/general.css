@@ -1,4 +1,6 @@
 /*General Settings*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -62,6 +64,11 @@ a{
                             "footer footer  sidebar";
     }
 
+    .container.form-section {
+        grid-template-areas: "header  header  header"
+                             "main    main    main"
+                             "footer footer  footer";
+    }
     .header {
         grid-area: header
     }

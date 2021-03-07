@@ -5,13 +5,14 @@ let xmlHttp = new XMLHttpRequest();
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
     formData = new FormData(loginForm);
-    xmlHttp.open("POST", login_URL, true); 
-    xmlHttp.send(formData);
-    xmlHttp.onreadystatechange = function() {
-        if(xmlHttp.readyState == 4) {
-            alert(xmlHttp.responseText);
-        }
-    }
+    fetch(login_URL, { method: 'POST', body: formData })
+        .then(response => {
+            if(response.ok) {
+              return  response.text();
+            } else {
+                throw "error en la llamada Ajax";
+            }
+        })
+        .then(data => console.log(data))
+        .catch(err => console.error(err));
 })
-
-//Revisar funcion require
