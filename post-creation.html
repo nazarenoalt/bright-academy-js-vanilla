@@ -35,9 +35,9 @@
             <div class="editor" id="editor-container" name="content"></div>
 
             <!--Item creator-->
-            <h3> Diseña un item para la clase</h3>
             <div class="item-creator">
-                <select class="selector" id="level-selector">
+                <h3> Diseña un item para la clase</h3>
+                <select class="selector" id="level-selector" onchange="changeDifficult()">
                     <option value="1">easy</option>
                     <option value="2">moderate</option>
                     <option value="3">difficult</option>
@@ -45,10 +45,11 @@
 
                 <select class="selector" id="emoji-selector">
                 </select>
-                <div  class="item-background"></div>
+                <div  class="easy" id="item-background"></div>
                 <!--
                     *Seleccionador de imagenes para los emojis
                     *Seleccionador de color por nivel
+                    *convertir seleccionador en formulario
                 -->
             </div>
             <!--Submit Button-->
@@ -66,6 +67,6 @@
     <script src="src/js/importElements.js" type="module"></script>
     <script src="src/js/sidebar.js" type="module"></script>
     <script src="src/js/post-creation.js"></script>
-    <script src="src/js/create-icon.js"></script>
+    <script src="src/js/item-creation.js"></script>
 
 </body>

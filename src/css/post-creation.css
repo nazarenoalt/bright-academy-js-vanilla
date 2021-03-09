@@ -46,12 +46,18 @@
     border: none;
     color: var(--white);
     font-size: 1.5rem;
-    margin-top: 30px;
     margin-bottom: -20px;
     border-radius: 15px;
     transition: background-color .12s;
 }
 
+.item-creator {
+    margin: 50px 0;
+}
+.item-creator h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
 .selector {
     display: block;
     width: 200px;
@@ -59,19 +65,28 @@
     margin: 0 auto 15px;
 }
 
-.item-background {
+#item-background {
     width: 150px;
     height: 150px;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 30px
+}
+.easy {
     background-color: var(--green);
     border: 7px solid var(--green-2);
-    border-radius: 100%;
+}
+.moderate {
+    background-color: var(--blue);
+    border: 7px solid var(--blue-2);
+}
+.difficult {
+    background-color: var(--orange);
+    border: 7px solid var(--orange-2);
 }
 .submit-button:active {
     background-color: var(--dark-blue-2);
 
-}
-.item-background {
-    margin: 0 auto;
 }
 
 @media screen and (min-width: 500px ) {
