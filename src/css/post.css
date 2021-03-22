@@ -12,6 +12,7 @@
 }
 .post-container {
     border-bottom: 2px solid var(--moderate-light-gray);
+    width: 100%;
 }
 .new-comment {
 }
@@ -76,4 +77,10 @@
 }
 .limit-exceeded {
     color: var(--red);
+}
+
+@media screen and (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 85%;
+    }
 }
