@@ -4,6 +4,7 @@
   "description": "Education Platform for Bright Academy",
   "main": "./js/importElements.js",
   "dependencies": {
+    "moment": "^2.29.1",
     "quill": "^1.3.7"
   },
   "devDependencies": {},

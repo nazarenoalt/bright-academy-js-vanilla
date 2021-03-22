@@ -15,15 +15,12 @@
 
 <!--Main content-->
 <section class="main-content">
-    <form method="get" class="post-container">
+    <form method="get" class="post-container" id="post_container">
    <section class="post-info">
-       <h2>Titulo</h2>
-       <time>23 de Marzo - 2021</time>
+       <h2 id="post_title" name="post_title"></h2>
+       <time id="post_date" name="post_date"></time>
     </section>
-    <section class="post-content">
-        <h3>Hola mi gente</h3>
-        <p>In the next class we'll talk about PORONGA</p>
-    </section>
+    <section id="post_content" class="post-content"></section>
     </form>
     <section class="comments-container">
         <h3>Publicar un comentario</h3>
@@ -86,5 +83,6 @@
 <script src="src/js/importElements.js" type="module"></script>
 <script src="src/js/sidebar.js" type="module"></script>
 <script src="src/js/new-comment.js"></script>
+<script src="src/js/fetch-post.js" type="module"></script>
 
 </body>
