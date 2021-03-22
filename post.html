@@ -26,6 +26,21 @@
     </section>
     </section>
     <section class="comments-container">
+        <h3>Publicar un comentario</h3>
+        <form action="post" class="new-comment">
+            <textarea class="comment-input"
+                      id="comment_input"                      placeholder="tienes alguna duda? publicala aquí"
+                      autocapitalize="sentences"
+                      autocomplete="on"
+                      name="comment_input"
+                      required
+                      ></textarea>
+                      <p class="char_counter" id="char_counter">500</p>
+            <button class="submit-button tag" id="new_comment_submit">Publicar</button>
+        </form>
+        <div class="comments-track">
+            <p>Comentarios: <span id="number_comments"></span></p>
+        </div>
         <div class="comment">
             <div class="comment__user-info">
                 <a href="#">
@@ -46,7 +61,7 @@
                 </a>
                 <a class="comment__user-name" href="#">Josefita</a>
             </div>
-            <div class="comment__content">PROOFEE can I use this in spanish or I have to comment everything in english?</div>
+            <div class="comment__content">PROOFEE can I use this in spanish or do I have to comment everything in english?</div>
         </div>
         <div class="comment">
             <div class="comment__user-info">
@@ -70,5 +85,6 @@
 
 <script src="src/js/importElements.js" type="module"></script>
 <script src="src/js/sidebar.js" type="module"></script>
+<script src="src/js/new-comment.js"></script>
 
 </body>

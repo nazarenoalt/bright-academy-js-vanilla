@@ -3,6 +3,7 @@
 @import 'sidebar.css';
 @import 'general.css';
 @import 'main-content.css';
+@import 'formulary.css';
 
 .main-content {
     display: grid;
@@ -11,6 +12,19 @@
 }
 .post-container {
     border-bottom: 2px solid var(--moderate-light-gray);
+}
+.new-comment {
+}
+.comment-input {
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 2px;
 }
 .post-info {
     width: 100%;
@@ -28,6 +42,10 @@
 .comments-container {
     margin: 20px auto;
     width: 100%;
+}
+.comments-track {
+    padding: 10px 0;
+    border-bottom: 2px solid var(--light-gray);
 }
 .comment {
     padding: 20px 0;
@@ -47,7 +65,7 @@
     border-radius: 100%;
     margin-right: 20px;
 }
-comment__user-img {
+.comment__user-img {
     max-width: 100%;
 }
 .comment__user-name {
@@ -55,4 +73,7 @@ comment__user-img {
     font-weight: bold;
     color: var(--dark-blue);
     text-decoration: none;
+}
+.limit-exceeded {
+    color: var(--red);
 }
