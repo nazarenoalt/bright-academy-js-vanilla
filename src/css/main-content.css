@@ -17,9 +17,19 @@
     background-color: var(--dark-blue);
     color: var(--white);
     border-radius: 5px;
+    border: none;
     transition: filter .2s;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 30px auto;
+    border: none;
 }
-
+.tag[disabled] {
+    background-color: var(--moderate-light-gray);
+}
+.tag[disabled]:hover {
+    filter:none
+}
 .tag a {
     text-decoration: none;
 }

@@ -3,6 +3,7 @@
 @import 'sidebar.css';
 @import 'general.css';
 @import 'formulary.css';
+@import 'main-content.css';
 
 .main-content {
     grid-area: main;
