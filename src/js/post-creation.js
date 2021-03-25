@@ -23,14 +23,21 @@ let toolbarOptions = [
 }
 
 let editor = new Quill('#editor-container', options);
+var editor_content = document.querySelector('.ql-editor').outerHTML;
 
 //SENDING POST BBY FETCH
 
 const URL = 'http://gonza56d.pythonanywhere.com/api/posts/'
 const AUTH = '1488f97fb28017654e6d4dd5210738b859784d13';
-const TITLE = 'hola';
-const CONTENT = 'QUE ONDA LOCO';
-const BOYD =
+const POST_TITLE = document.querySelector('#post-title');
+const POST_CONTENT = document.querySelector('#editor-container');
+const SUBMIT_BUTTON = document.querySelector('#submit-button');
+
+SUBMIT_BUTTON.addEventListener('click', () => {
+  console.log(POST_TITLE.value)
+  console.log(editor_content)
+})
+/*
 fetch(URL, { 
   method : 'POST',
   body: {
@@ -43,4 +50,4 @@ fetch(URL, {
   }    
 }).then(response => response.json())
   .then(data => console.log(data))
-  .catch(err => console.error(err))
+  .catch(err => console.error(err))*/
