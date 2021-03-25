@@ -2,7 +2,7 @@
 .main-content {
     grid-area: main;
     background-color: var(--white);
-    min-height: 71vh;
+min-height: 71vh;
     color: var(--dark-blue);
     display: flex;
     flex-direction: column;

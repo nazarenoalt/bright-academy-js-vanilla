@@ -23,3 +23,24 @@ let toolbarOptions = [
 }
 
 let editor = new Quill('#editor-container', options);
+
+//SENDING POST BBY FETCH
+
+const URL = 'http://gonza56d.pythonanywhere.com/api/posts/'
+const AUTH = '1488f97fb28017654e6d4dd5210738b859784d13';
+const TITLE = 'hola';
+const CONTENT = 'QUE ONDA LOCO';
+const BOYD =
+fetch(URL, { 
+  method : 'POST',
+  body: {
+    title : `${TITLE}`,
+    content : `${CONTENT}`,
+  },
+  headers : {
+    Authorization : `Token ${AUTH}`,
+    Type: 'json'
+  }    
+}).then(response => response.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err))
