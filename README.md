@@ -1,32 +1,3 @@
 # bright-academy
-Media platform to save and share digital version of classes to students of Bright Academy
+Bright Academy is an education platform made for students who can't be phisically in the classroom, so they can watch the virtual version of the class. This site is made thinking for being easy and understandable for all ages
 
-# sections
-
-Index
-*
-*Iniciar Sesion
-*
-*Registrarse
-*
-*Beginners
-|*
-|*Courses List (beginners) -> Post
-|*
-*Elementary
-|*
-|*Kids
-|*|*
-|*|*Courses List (kids) -> Post
-|*|*
-|*Teenagers
-|*|*
-|*|*Courses List (teen) -> Post
-|*|*
-|*Adults
-|*|*
-|*|*Courses List (adults) -> Post
-|*|*
-|*
-
-*Menu
