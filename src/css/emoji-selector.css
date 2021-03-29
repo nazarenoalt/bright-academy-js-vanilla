@@ -1,4 +1,4 @@
-.emoji-container {
+.emoji-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, 32px);
     grid-template-rows: repeat(auto-fill, 32px);
@@ -6,7 +6,6 @@
     grid-auto-flow: row;
     flex-wrap: wrap;
     width: 377px;
-    height: 200px;
     gap: 5px;
     border: 1px solid gray;
     padding: 5px;
@@ -15,5 +14,3 @@
 .emoji-selected {
     border: 1px solid red;
 }
-
-  

@@ -70,8 +70,15 @@
     height: 150px;
     border-radius: 100%;
     margin: 0 auto;
-    margin-top: 30px
+    margin-top: 30px;
+    display: flex;
+    place-content: center;
 }
+
+.item-emoji {
+    width: 60%;
+}
+
 .easy {
     background-color: var(--green);
     border: 7px solid var(--green-2);
