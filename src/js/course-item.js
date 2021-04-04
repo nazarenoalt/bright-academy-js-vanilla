@@ -1,3 +1,6 @@
+
+console.log('hola')
+
 class courseItem extends HTMLElement {
     constructor() {
         super();
@@ -34,7 +37,7 @@ class courseItem extends HTMLElement {
         template.innerHTML = `
         <div class="course-container">
             <a  href="${this.url || '#'}">
-                <div class="course-item ${this.difficulty}">
+                <div class="course-item ${this.difficulty || 'beginner'}">
                     <span>
                         <img src="assets/icons/emojis/svg/${this.emoji}" alt="">
                     </span>
@@ -99,7 +102,7 @@ class courseItem extends HTMLElement {
                     background-color: var(--orange);
                     border: 5px solid var(--orange-2);
                 }
-                .course-item.elementary-kids {
+                .course-item.intermediate {
                     background-color: var(--green);
                     border: 5px solid var(--green-2);
                 }
@@ -134,8 +137,8 @@ class courseItem extends HTMLElement {
 
     connectedCallback() {
         this.render();
-        console.log(this.courseTitle)
     }
 }
 
 customElements.define('course-item', courseItem);
+

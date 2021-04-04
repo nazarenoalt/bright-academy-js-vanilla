@@ -1,18 +1,20 @@
 const newContainer = document.getElementById('new-container');
 
-let divs = document.querySelectorAll('.course-container');
+let item = document.querySelectorAll('.course-container');
+console.log(item)
 let nodos = [];
 let counter = 0;
 
-for (let i = 0; i < divs.length; i++) {
+for (let i = 0; i < item.length; i++) {
     counter++;
+    console.log(item[i])
 
     if(counter === 2) {
 
         let nodo = document.createElement('div');
         nodo.classList.add('wrapped') 
 
-        nodo.append(divs[i-1], divs[i])
+        nodo.append(item[i-1], item[i])
         nodos.push(nodo);
         
     } else if(counter === 5) {
@@ -20,7 +22,7 @@ for (let i = 0; i < divs.length; i++) {
         let nodo = document.createElement('div');
         nodo.classList.add('wrapped') 
 
-        nodo.append(divs[i-2], divs[i-1], divs[i])
+        nodo.append(item[i-2], item[i-1], item[i])
         nodos.push(nodo)
         counter = 0;
 
