@@ -1,6 +1,3 @@
-
-console.log('hola')
-
 class courseItem extends HTMLElement {
     constructor() {
         super();

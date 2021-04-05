@@ -1,5 +1,5 @@
 const signupForm = document.querySelector('#signup-form');
-const signup_URL = 'http://gonza56d.pythonanywhere.com/api/users/signup/';
+const signup_URL = 'http://brightacademy.pythonanywhere.com/api/users/signup/';
 
 signupForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -7,11 +7,14 @@ signupForm.addEventListener('submit', (event) => {
     fetch(signup_URL, { method: 'POST', body: formData })
         .then(response => {
             if (response.ok) {
-            return response.text()
+            return response.json()
             } else {
                 throw "error en la llamada del Ajax"
             }
         })
-        .then(data => console.log(data))
+        .then(data => {
+            document.cookie = `access_token=${data.access_token}`;
+            console.log(data)
+        })
         .catch(err => console.error(err))
 })

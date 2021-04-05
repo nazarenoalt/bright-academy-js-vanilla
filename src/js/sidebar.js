@@ -7,8 +7,6 @@
         sidebar.style.display = 'none'
     }
 
-    console.log('test')
-    
     window.addEventListener('load', () => {
         const menu = document.querySelector('#menu')
         menu.onclick = openCloseSidebar;

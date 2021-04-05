@@ -27,7 +27,7 @@ var editor_content = document.querySelector('.ql-editor').outerHTML;
 
 //SENDING POST BBY FETCH
 
-const URL = 'http://gonza56d.pythonanywhere.com/api/posts/'
+const URL = 'http://brightacademy.pythonanywhere.com/api/posts/'
 const AUTH = '1488f97fb28017654e6d4dd5210738b859784d13';
 const POST_TITLE = document.querySelector('#post-title');
 const POST_CONTENT = document.querySelector('#editor-container');

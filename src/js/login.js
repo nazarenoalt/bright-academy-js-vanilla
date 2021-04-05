@@ -1,5 +1,5 @@
 const loginForm = document.querySelector('#login-form');
-const login_URL = 'http://gonza56d.pythonanywhere.com/api/users/login/';
+const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
 let xmlHttp = new XMLHttpRequest();
 
 loginForm.addEventListener('submit', (event) => {
@@ -8,11 +8,14 @@ loginForm.addEventListener('submit', (event) => {
     fetch(login_URL, { method: 'POST', body: formData })
         .then(response => {
             if(response.ok) {
-              return  response.text();
+              return  response.json();
             } else {
                 throw "error en la llamada Ajax";
             }
         })
-        .then(data => console.log(data))
+        .then(data => {
+            document.cookie = `access_token=${data.access_token}`;
+            console.log(data)
+        })
         .catch(err => console.error(err));
 })
