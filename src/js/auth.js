@@ -1,4 +1,4 @@
-export function userAuthentication(fun) {
+export function userAuthentication(caseTrue, caseFalse) {
 
     const API_URL = 'http://brightacademy.pythonanywhere.com/api/utils/validate_token/';
     const AUTH_COOKIE = document.cookie //return the specific array that contains the token
@@ -17,9 +17,9 @@ export function userAuthentication(fun) {
     })
         .then(response => {
             if (response.ok) {
-                fun();
+                caseTrue();
             } else {
-                window.location = 'http://localhost:63342/bright-academy/guest.html'
+               caseFalse();
             }
         })
 

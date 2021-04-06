@@ -1,7 +1,8 @@
 import {userAuthentication} from "./auth.js";
 import { ORIGIN_ROOT } from "./root.js";
 
-function importElements() {
+//writing layouts in the DOM
+const importElements = () => {
     const header = document.getElementById('header');
     const footer = document.getElementById('footer');
     const sidebar = document.getElementById('sidebar');
@@ -25,6 +26,8 @@ function importElements() {
         .catch(handleErrors => console.error(handleErrors));
 }
 
+//in the case the user be a guest, will be redirected to guest section
+const isGuest = () => window.location = 'http://localhost:63342/bright-academy/guest.html';
 const GUEST_PATH = [
     '/bright-academy/',
     '/bright-academy',
@@ -42,11 +45,5 @@ const PATH = window.location.pathname;
 if (GUEST_PATH.includes(PATH)) {
     importElements();
 } else {
-    userAuthentication(importElements)
+    userAuthentication(importElements, isGuest)
 }
-
-/*
-* PROBLEMA: Pese a que la cookie da token de acceso, la página sigue tratandome como si fuese invitado
-*
-* RAIZ DEL PROBLEMA: La razon podría ubicarse en auth.js
-* */
