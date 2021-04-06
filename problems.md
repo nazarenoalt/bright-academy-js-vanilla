@@ -6,5 +6,5 @@
 [PENDING] MAke each component change depending if the user is registered\
 [PENDING] The user should can logout\
 [PENDING] Create section contact\
-
+[PENDING] Burger menu doesn't work\
 

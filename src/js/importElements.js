@@ -26,14 +26,14 @@ function importElements() {
 }
 
 const GUEST_PATH = [
-    '/bright-academy',
-    '/bright-academy/login.html',
-    '/bright-academy/signup.html',
-    '/bright-academy/guest.html',
     '/bright-academy/',
-    '/bright-academy/login.html/',
-    '/bright-academy/signup.html/',
+    '/bright-academy',
     '/bright-academy/guest.html/',
+    '/bright-academy/guest.html',
+    '/bright-academy/login.html/',
+    '/bright-academy/login.html',
+    '/bright-academy/signup.html/',
+    '/bright-academy/signup.html',
     '/bright-academy/index.html/',
     '/bright-academy/index.html'
 ]
