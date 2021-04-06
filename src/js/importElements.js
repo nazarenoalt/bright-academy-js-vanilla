@@ -1,6 +1,6 @@
 import {userAuthentication} from "./auth.js";
+import { ORIGIN_ROOT } from "./root.js";
 
-const ORIGIN_ROOT = 'https://nazarenoalt.github.io/bright-academy'
 function importElements() {
     const header = document.getElementById('header');
     const footer = document.getElementById('footer');
