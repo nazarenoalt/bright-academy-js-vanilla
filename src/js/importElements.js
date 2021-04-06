@@ -1,5 +1,7 @@
 import {userAuthentication} from "./auth.js";
 import { ORIGIN_ROOT } from "./root.js";
+import { renderElements } from "./renderElements/renderElements.js";
+
 
 //writing layouts in the DOM
 const importElements = () => {

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/renderElements/renderElements.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beginners.html" beforeDir="false" afterPath="$PROJECT_DIR$/beginners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problems.md" beforeDir="false" afterPath="$PROJECT_DIR$/problems.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/course-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/course-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/importElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/importElements.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
       <recent name="$PROJECT_DIR$/src/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$/src/js/components" />
     </key>
   </component>
