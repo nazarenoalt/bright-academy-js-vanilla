@@ -1,4 +1,5 @@
 import { ORIGIN_ROOT } from "./root.js";
+import { userAuthentication } from "./auth.js";
 
 const loginForm = document.querySelector('#login-form');
 const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
