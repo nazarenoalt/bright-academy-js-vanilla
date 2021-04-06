@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beginners.html" beforeDir="false" afterPath="$PROJECT_DIR$/beginners.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/problems.md" beforeDir="false" afterPath="$PROJECT_DIR$/problems.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/course-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/course-item.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/layouts" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js/components" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bright-academy/index.html" useBuiltInWebServerPort="true">
@@ -88,7 +92,7 @@
       <workItem from="1617712993423" duration="10637000" />
       <workItem from="1617724694816" duration="234000" />
       <workItem from="1617724929524" duration="7802000" />
-      <workItem from="1617734866676" duration="3123000" />
+      <workItem from="1617734866676" duration="3942000" />
     </task>
     <task id="LOCAL-00001" summary="created &lt;course-item&gt; component">
       <created>1617572694086</created>

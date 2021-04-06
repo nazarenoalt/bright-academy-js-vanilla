@@ -7,4 +7,9 @@
 [PENDING] The user should can logout\
 [PENDING] Create section contact\
 [PENDING] Burger menu doesn't work\
-[PENDING] signup.html is bugged and doesn't restrict self for registered users
+[PENDING] signup.html is bugged and doesn't restrict self for registered users\
+[PENDING] solve fetching posts \
+[PENDING] solve fetching comments \
+[PENDING] solve receiving posts \
+[PENDING] solve receiving comments \
+[PENDING] solve receiving the post-list \
