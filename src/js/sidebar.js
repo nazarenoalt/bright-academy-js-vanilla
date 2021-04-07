@@ -1,23 +1,20 @@
 const sidebarElement = document.getElementById('sidebar');
+const header = document.querySelector('header-component')
 const mediaQuery = window.matchMedia('screen and (min-width: 1024px)');
 
 if (mediaQuery.matches) {
     sidebar.classList.add('sidebar-desktop');
 } else {
     sidebar.style.display = 'none'
+    header.setAttribute('responsive','mobile')
 }
 
-window.addEventListener('onload', () => {
-    const menu = document.querySelector('#menu')
-    menu.onclick(openCloseSidebar)
-    console.log(menu)
+window.addEventListener('load', () => {
+
+
 })
+
 function openCloseSidebar() {
-    console.log('HOLAAAAs')
-    if (sidebar.style.display === 'none') {
-        sidebar.style.display = 'block'
-    } else {
-        sidebar.style.display = 'none'
-    }
+
 }
 

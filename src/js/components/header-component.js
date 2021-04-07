@@ -7,41 +7,54 @@ class headerComponent extends HTMLElement {
     getTemplate() {
         const template = document.createElement('template');
         template.innerHTML = `
-            <div class="logo-container" id="container">
-                <a href="index.html">
-                    <img src="https://nazarenoalt.github.io/bright-academy/assets/img/logo.jpg" alt="Bright Academy">
-                </a>
-            </div>
-            <div class="menu" id="menu">
-                <!--
-                    The color is changed using the DOM of svg. If you want to change it, open burger-menu.svg with your IDE and change the "fill" peroperty of <path> tag
-        
-                    <path fill="[color]" d="...">    
-                -->
-                    <img src="https://nazarenoalt.github.io/bright-academy/assets/icons/burger-menu.svg" alt="menu">
+            <div class="component">
+                <div class="logo-container" id="container">
+                    <a href="index.html">
+                        <img src="https://nazarenoalt.github.io/bright-academy/assets/img/logo.jpg" alt="Bright Academy">
+                    </a>
+                </div>
+                <div class="menu" id="menu">
+                    <!--
+                        The color is changed using the DOM of svg. If you want to change it, open burger-menu.svg with your IDE and change the "fill" peroperty of <path> tag
+            
+                        <path fill="[color]" d="...">    
+                    -->
+                        <img src="https://nazarenoalt.github.io/bright-academy/assets/icons/burger-menu.svg" alt="menu">
+                </div>
             </div>
             ${this.getStyle()}
         `
         return template;
     }
 
+    static get observedAttributes() {
+        return ['responsive']
+    }
+
+    attributeChangedCallback(attr, oldV, newV) {
+        if (attr = 'responsive') {
+            this.responsive = newV;
+        }
+    }
+
     getStyle() {
         return `
             <style>
+            :host {
+                --red: #e8303a;
+            }
                 .icon-menu:before {
                     content: "\\e9bd";
                   }
                 /*Header*/
-                .header {
+                .component {
                     display: grid;
-                    grid-area: header;
-                    grid-template-columns: 1fr 100px;
-                    grid-template-areas: "logo menu";
-                    background-color: var(--red);
+                    grid-template-columns: [logo] auto [menu] 100px;
+                    background-color: #e8303a;
                 }
                 
                 .logo-container {
-                    grid-area: logo;
+                     grid-area: logo;
                 }
                 
                 .logo-container img {
@@ -49,6 +62,7 @@ class headerComponent extends HTMLElement {
                 }
                 
                 .menu {
+                    grid-area: menu;
                     color: var(--dark-blue);
                     width: 60px;
                     height: 60px;
@@ -59,7 +73,9 @@ class headerComponent extends HTMLElement {
                 .menu :hover  {
                     filter: brightness(150%);
                 }
-                
+                a {
+                    grid-area: logo;
+                }
                 @media screen and (min-width: 1024px) {
                     .menu {
                         display: none;
@@ -75,12 +91,24 @@ class headerComponent extends HTMLElement {
             </style>
         `
     }
+
+    switchMenu() {
+        const menu = this.shadowRoot.querySelector(".menu")
+        const sidebar = document.querySelector('.sidebar');
+        menu.addEventListener('click', () => {
+                sidebar.style.display === 'none'
+                    ? sidebar.style.display = 'block'
+                    : sidebar.style.display = 'none';
+            })
+        }
+
     render() {
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
     }
 
     connectedCallback() {
         this.render()
+        this.switchMenu();
     }
 }
 
