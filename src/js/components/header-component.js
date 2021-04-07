@@ -1,4 +1,4 @@
-class headerComponent extends HTMLElement() {
+class headerComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
@@ -20,7 +20,7 @@ class headerComponent extends HTMLElement() {
                 -->
                     <img src="https://nazarenoalt.github.io/bright-academy/assets/icons/burger-menu.svg" alt="menu">
             </div>
-            ${getStyle()}
+            ${this.getStyle()}
         `
         return template;
     }
@@ -76,10 +76,11 @@ class headerComponent extends HTMLElement() {
         `
     }
     render() {
-        this.rootShadow.apapendChild(this.getTemplate());
+        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
     }
-    connectedCallBack() {
-        render()
+
+    connectedCallback() {
+        this.render()
     }
 }
 
