@@ -14,7 +14,9 @@
 <body class="container loading">
     
     <!--Header charged since import.js-->
-    <header class="header" id="header" ></header>
+    <header class="header" id="header">
+        <header-component></header-component>
+    </header>
 
     <!--Main content-->
     <section class="main-content">
@@ -57,16 +59,25 @@
     </section>
 
     <!--Sidebar charged since import.js-->
-    <section class="sidebar" id="sidebar"></section>
+    <section class="sidebar" id="sidebar">
+        <sidebar-component></sidebar-component>
+    </section>
 
     <!--Footer charged since import.js-->
-    <footer class="footer" id="footer" ></footer>
+    <footer class="footer" id="footer" >
+        <footer-component owner="Profesora Camelia Brignole"
+                          address="Direccion: Avenida Siempreviva 742"
+                          contactLink="#"
+        ></footer-component>
+    </footer>
 
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="src/js/importElements.js" type="module"></script>
-    <script src="src/js/sidebar.js" type="module"></script>
     <script src="src/js/post-creation.js"></script>
     <script src="src/js/item-creation.js"></script>
     <script src="src/js/emoji-box.js"></script>
+    <script type="module" src="src/js/components/header-component.js"></script>
+    <script type="module" src="src/js/components/footer-component.js"></script>
+    <script type="module" src="src/js/components/sidebar-component.js"></script>
 
 </body>

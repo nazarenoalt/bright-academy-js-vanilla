@@ -1,7 +1,4 @@
 @import 'general.css';
-@import 'header.css';
-@import 'footer.css';
-@import 'sidebar.css';
 @import 'main-content.css';
 .courses-list {
     width: 100%;
