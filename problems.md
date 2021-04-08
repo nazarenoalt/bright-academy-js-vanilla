@@ -13,3 +13,4 @@
 [PENDING] solve receiving posts \
 [PENDING] solve receiving comments \
 [PENDING] solve receiving the post-list \
+[PENDING] burger menu in loggin, guess and signup
