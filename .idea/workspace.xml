@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problems.md" beforeDir="false" afterPath="$PROJECT_DIR$/problems.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/post-creation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/post-creation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/importElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/importElements.js" afterDir="false" />
-    </list>
+    <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,8 +45,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
@@ -95,7 +93,7 @@
       <workItem from="1617724929524" duration="7802000" />
       <workItem from="1617734866676" duration="5088000" />
       <workItem from="1617833069681" duration="842000" />
-      <workItem from="1617921056191" duration="1688000" />
+      <workItem from="1617921056191" duration="1831000" />
     </task>
     <task id="LOCAL-00001" summary="created &lt;course-item&gt; component">
       <created>1617572694086</created>
