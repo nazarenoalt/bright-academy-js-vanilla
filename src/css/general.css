@@ -56,6 +56,17 @@ a{
     grid-area: main;
 }
 
+#sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 252px;
+    box-shadow: 3px 0px 50px rgba(0,0,0,0.5);
+    transition: margin.5s;
+    overflow: hidden;
+}
 #footer {
     grid-area: footer;
 }
@@ -86,6 +97,13 @@ a{
 
     #sidebar {
         grid-area: sidebar;
+        width: 270px;
+        display: block;
+        position: fixed;
+        left: initial;
+        right: 0;
+        background-color:var(--dark-blue);
+    }
     }
 
 }

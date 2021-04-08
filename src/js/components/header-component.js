@@ -27,16 +27,6 @@ class headerComponent extends HTMLElement {
         return template;
     }
 
-    static get observedAttributes() {
-        return ['responsive']
-    }
-
-    attributeChangedCallback(attr, oldV, newV) {
-        if (attr = 'responsive') {
-            this.responsive = newV;
-        }
-    }
-
     getStyle() {
         return `
             <style>
@@ -93,8 +83,8 @@ class headerComponent extends HTMLElement {
     }
 
     switchMenu() {
-        const menu = this.shadowRoot.querySelector(".menu")
-        const sidebar = document.querySelector('.sidebar');
+        const menu = this.shadowRoot.querySelector("#menu")
+        const sidebar = document.querySelector('#sidebar');
         menu.addEventListener('click', () => {
                 sidebar.style.display === 'none'
                     ? sidebar.style.display = 'block'
