@@ -17,7 +17,7 @@ const importElements = () => {
 
     Promise.all([
         //chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/header.html`, header),
-        chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/footer.html`, footer),
+        //chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/footer.html`, footer),
         chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/sidebar.html`, sidebar),
     ])
         .then(() => {

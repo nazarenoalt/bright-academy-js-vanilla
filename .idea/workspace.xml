@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/components/footer-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/components/sidebar-component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/footer.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/header-component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/header-component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/importElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/importElements.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

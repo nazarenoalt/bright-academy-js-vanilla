@@ -50,9 +50,16 @@ a{
 
 #header {
     grid-area: header;
-
-
 }
+
+#main-content {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
 .title {
     font-weight: bold;
     font-size: 2.5em;
@@ -76,20 +83,9 @@ a{
                              "main    main    main"
                              "footer footer  footer";
     }
-    .header {
-        grid-area: header
-    }
 
-    .main-content {
-        grid-area: main;
-    }
-
-    .sidebar {
+    #sidebar {
         grid-area: sidebar;
-    }
-
-    .footer {
-        grid-area: footer
     }
 
 }
