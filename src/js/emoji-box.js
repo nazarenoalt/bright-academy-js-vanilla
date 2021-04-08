@@ -143,6 +143,7 @@ function emojiSelector() {
 
     const itemEmoji = document.createElement('img');
     itemEmoji.classList.add('item-emoji')
+    itemEmoji.src = 'assets/icons/emojis/svg/111-heart.svg'
     emojis.forEach(emoji => {
         emoji.addEventListener('click', () => {
                 emojis.forEach(emoji => emoji.classList.remove('emoji-selected'))
