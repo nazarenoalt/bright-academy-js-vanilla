@@ -28,26 +28,32 @@ var editor_content = document.querySelector('.ql-editor').outerHTML;
 //SENDING POST BBY FETCH
 
 const URL = 'http://brightacademy.pythonanywhere.com/api/posts/'
-const AUTH = '1488f97fb28017654e6d4dd5210738b859784d13';
-const POST_TITLE = document.querySelector('#post-title');
-const POST_CONTENT = document.querySelector('#editor-container');
-const SUBMIT_BUTTON = document.querySelector('#submit-button');
+const AUTH = '2587b85d61320f51e6eecd6b4ee0e88b6bf390a0';
+const POST_TITLE = document.querySelector('#post-title').value;
+const POST_CONTENT = document.querySelector('.ql-editor');
+const POST_DIFFICULTY = document.querySelector('#level-selector').value;
+const SUBMIT = document.querySelector('#post-formulary');
 
-SUBMIT_BUTTON.addEventListener('click', () => {
-  console.log(POST_TITLE.value)
-  console.log(editor_content)
+SUBMIT.addEventListener('submit', () => {
+    debugger
+    fetch(URL, {
+        method : 'POST',
+        body: {
+            'title' : `${POST_TITLE}`,
+            'content' : `${POST_CONTENT.innerHTML}`,
+            'difficulty' : `${POST_DIFFICULTY}`,
+        },
+        headers : {
+            Authorization : `Token ${AUTH}`,
+            'Content-Type': "application/json",
+        }
+    }).then(response => response.json())
+        .then(data => console.log(data))
+        .catch(err => {
+            console.error(err)
+
+        })
 })
 /*
-fetch(URL, { 
-  method : 'POST',
-  body: {
-    title : `${TITLE}`,
-    content : `${CONTENT}`,
-  },
-  headers : {
-    Authorization : `Token ${AUTH}`,
-    Type: 'json'
-  }    
-}).then(response => response.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err))*/
+f
+ */

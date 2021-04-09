@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post-creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/post-creation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/emoji-box.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/emoji-box.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/item-creation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/item-creator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/post-editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems.md" beforeDir="false" afterPath="$PROJECT_DIR$/problems.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/item-creator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/item-creator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/post-creation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/post-editor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <workItem from="1617724929524" duration="7802000" />
       <workItem from="1617734866676" duration="5088000" />
       <workItem from="1617833069681" duration="842000" />
-      <workItem from="1617921056191" duration="2348000" />
+      <workItem from="1617921056191" duration="7982000" />
     </task>
     <task id="LOCAL-00001" summary="created &lt;course-item&gt; component">
       <created>1617572694086</created>

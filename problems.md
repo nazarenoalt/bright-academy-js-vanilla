@@ -13,4 +13,5 @@
 [PENDING] solve receiving posts \
 [PENDING] solve receiving comments \
 [PENDING] solve receiving the post-list \
-[PENDING] burger menu in login, guess and signup
+[PENDING] burger menu in login, guess and signup \
+[PENDING] post formulary must require all fields/values \

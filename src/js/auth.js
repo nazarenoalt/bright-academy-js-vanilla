@@ -12,7 +12,7 @@ export function userAuthentication(caseTrue, caseFalse) {
     fetch(API_URL, { //fetch api and return if AUTH_TOKEN = token Api
         method: 'POST',
         headers: {
-            Authorization: `Token ${AUTH_TOKEN()}`
+            'Authorization': `Token ${AUTH_TOKEN()}`,
         }
     })
         .then(response => {

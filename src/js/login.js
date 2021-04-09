@@ -3,7 +3,6 @@ import { userAuthentication } from "./auth.js";
 
 const loginForm = document.querySelector('#login-form');
 const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
-let xmlHttp = new XMLHttpRequest();
 
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
