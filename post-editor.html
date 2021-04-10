@@ -3,84 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <title>Crear un Post | Bright Academy</title>
-    <link rel="stylesheet" href="src/css/post-creation.css">
+    <link rel="stylesheet" href="src/css/post-editor.css">
     <link rel="stylesheet" href="src/css/emoji-selector.css">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
 </head>
 
 <body class="container loading">
-    
-    <!--Header charged since import.js-->
-    <header class="header" id="header">
-        <header-component></header-component>
-    </header>
 
-    <!--Main content-->
-    <section class="main-content">
-        <form class="post-formulary" id="post-formulary" method="POST">
+<!--Header charged since import.js-->
+<header class="header" id="header">
+    <header-component></header-component>
+</header>
 
-            <!--Post data container -->
-            <div class="post-data__container" id="post-datra__container" method="POST">
+<!--Main content-->
+<section class="main-content">
+    <form class="post-formulary" id="post-formulary" method="POST">
+        <div class="post-data__container" id="post-datra__container" method="POST" enctype="application/x-www-form-urlencoded">
                 <span class="span-title">
                     <label for="post-title">Título:</label>
-                    <input type="text" class="post-title" 
-                    id="post-title" name="title" required>
+                    <input type="text" class="post-title" id="post-title" name="title" value="este es el titulo" required/>
                 </span>
-                <span class="span-date">
-                    <label for="post-title">Fecha:</label>
-                    <input type="date" class="post-date" 
-                    id="post-date" name="date" required>
-                </span>
-            </div>
+        <input type="text-area" class="post-content" id="post-content" name="content" value="este es el contenido"/>
 
-            <!--Post editor-->
-            <div class="editor" id="editor-container" name="content"></div>
+        <div class="item-creator">
 
-            <!--Item creator-->
-            <div class="item-creator">
-                <h3> Diseña un item para la clase</h3>
-                <select class="selector" id="level-selector" onchange="changeDifficult()" required>
-                    <option value="B">easy</option>
-                    <option value="I">moderate</option>
-                    <option value="A">difficult</option>
-                </select>
+            <h3> Diseña un item para la clase</h3>
+            <select class="selector" id="level-selector" name="difficulty" onchange="changeDifficult()" required>
+                <option value="B">easy</option>
+                <option value="I">moderate</option>
+                <option value="A">difficult</option>
+            </select>
+        </div>
 
-                <!--Emoji container-->
-                <div id="emoji_box_container">
-                    
-                </div>
-                <div  class="easy" id="item-background">
-                </div>
-            </div>
-            <!--Submit Button-->
-            <button type="submit" id="submit-button" class="submit-button" name="submit-button">Crear Clase</button>
-        </form>
+        <!--
+                    &lt;!&ndash;Post data container &ndash;&gt;
 
-    </section>
 
-    <!--Sidebar charged since import.js-->
-    <section class="sidebar" id="sidebar">
-        <sidebar-component></sidebar-component>
-    </section>
+                    &lt;!&ndash;Post editor&ndash;&gt;
+                    <div class="editor" id="editor-container" name="content"></div>
 
-    <!--Footer charged since import.js-->
-    <footer class="footer" id="footer" >
-        <footer-component owner="Profesora Camelia Brignole"
-                          address="Direccion: Avenida Siempreviva 742"
-                          contactLink="#"
-        ></footer-component>
-    </footer>
+                    &lt;!&ndash;Item creator&ndash;&gt;
 
-    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-    <script src="src/js/index.js" type="module"></script>
-    <script src="src/js/post-editor.js"></script>
-    <script src="src/js/item-creator.js"></script>
-    <script src="src/js/emoji-box.js"></script>
-    <script type="module" src="src/js/components/header-component.js"></script>
-    <script type="module" src="src/js/components/footer-component.js"></script>
-    <script type="module" src="src/js/components/sidebar-component.js"></script>
+
+                        &lt;!&ndash;Emoji container&ndash;&gt;
+                        <div id="emoji_box_container">
+
+                        </div>
+                        <div  class="easy" id="item-background">
+                    </div>-->
+        <!--Submit Button-->
+        <input type="submit" id="submit-button" class="submit-button" name="submit-button" value="crear clase">
+    </form>
+
+</section>
+
+<!--Sidebar charged since import.js-->
+<section class="sidebar" id="sidebar">
+    <sidebar-component></sidebar-component>
+</section>
+
+<!--Footer charged since import.js-->
+<footer class="footer" id="footer">
+    <footer-component owner="Profesora Camelia Brignole"
+                      address="Direccion: Avenida Siempreviva 742"
+                      contactLink="#"
+    ></footer-component>
+</footer>
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="src/js/index.js" type="module"></script>
+<script src="src/js/post-editor.js"></script>
+<script src="src/js/item-creator.js"></script>
+<script src="src/js/emoji-box.js"></script>
+<script type="module" src="src/js/components/header-component.js"></script>
+<script type="module" src="src/js/components/footer-component.js"></script>
+<script type="module" src="src/js/components/sidebar-component.js"></script>
 
 </body>

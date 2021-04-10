@@ -1,16 +1,23 @@
 .emoji-box {
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(auto-fit, 32px);
     grid-template-rows: repeat(auto-fill, 32px);
     grid-auto-columns: 32px;
     grid-auto-flow: row;
     flex-wrap: wrap;
     width: 377px;
+    height: 300px;
     gap: 5px;
     border: 1px solid gray;
     padding: 5px;
-    overflow: scroll;
+    overflow: auto;
 }
 .emoji-selected {
     border: 1px solid red;
+}
+@media screen and (min-width: 768px) {
+    .emoji-box {
+        display: inline-grid;
+    }
 }

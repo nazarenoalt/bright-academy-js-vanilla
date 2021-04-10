@@ -7,6 +7,7 @@ const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(loginForm);
+
     fetch(login_URL, { method: 'POST', body: formData })
         .then(response => {
             if(response.ok) {
