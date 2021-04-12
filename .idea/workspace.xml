@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/fetch-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fetch-post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/post-creation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/post-creation.js" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/guest.html" beforeDir="false" afterPath="$PROJECT_DIR$/guest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems.md" beforeDir="false" afterPath="$PROJECT_DIR$/problems.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+>>>>>>> 2841c76b09d4b9fa006bcc4868d1129b46d4a737
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="HIGHLIGHT_NON_ACTIgit audVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -58,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -91,9 +96,11 @@
       <workItem from="1617712993423" duration="10637000" />
       <workItem from="1617724694816" duration="234000" />
       <workItem from="1617724929524" duration="7802000" />
-      <workItem from="1617734866676" duration="3942000" />
-      <workItem from="1618251260754" duration="1060000" />
-      <workItem from="1618253082214" duration="715000" />
+
+      <workItem from="1617734866676" duration="5088000" />
+      <workItem from="1617833069681" duration="842000" />
+      <workItem from="1617921056191" duration="1017000" />
+>>>>>>> 2841c76b09d4b9fa006bcc4868d1129b46d4a737
     </task>
     <task id="LOCAL-00001" summary="created &lt;course-item&gt; component">
       <created>1617572694086</created>

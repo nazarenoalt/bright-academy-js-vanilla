@@ -12,7 +12,9 @@
 <body class="container form-section loading">
     
     <!--Header charged since import.js-->
-    <header class="header" id="header" ></header>
+    <header class="header" id="header">
+        <header-component></header-component>
+    </header>
 
     <!--Main content-->
     <section class="main-content">
@@ -37,12 +39,16 @@
 
     </section>
 
-    <!--Sidebar charged since import.js-->
-    <section class="sidebar" id="sidebar"></section>
-
     <!--Footer charged since import.js-->
-    <footer class="footer" id="footer" ></footer>
+    <footer class="footer" id="footer" >
+        <footer-component owner="Profesora Camelia Brignole"
+                          address="Direccion: Avenida Siempreviva 742"
+                          contactLink="#"
+        ></footer-component>
+    </footer>
 
     <script type="module" src="src/js/importElements.js"></script>
     <script type="module" src="src/js/login.js"></script>
+    <script type="module" src="src/js/components/header-component.js"></script>
+    <script type="module" src="src/js/components/footer-component.js"></script>
 </body>
