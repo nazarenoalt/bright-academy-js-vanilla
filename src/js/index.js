@@ -2,30 +2,7 @@ import {userAuthentication} from "./auth.js";
 import { ORIGIN_ROOT } from "./root.js";
 
 //writing layouts in the DOM
-const importElements = () => {
-    const header = document.getElementById('header');
-    const footer = document.getElementById('footer');
-    const sidebar = document.getElementById('sidebar');
-
-    function chargeHTMLElements(url, parent) {
-        return fetch(url)
-            .then(response => response.text())
-            .then(element => {
-                parent.innerHTML = element;
-            })
-    }
-
-    Promise.all([
-        //chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/header.html`, header),
-        //chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/footer.html`, footer),
-        //chargeHTMLElements(`${ORIGIN_ROOT}/src/layouts/sidebar.html`, sidebar),
-    ])
-        .then(() => {
-            document.body.classList.remove('loading');
-        })
-        .catch(handleErrors => console.error(handleErrors));
-}
-
+const index = () => document.body.classList.remove('loading');
 //in the case the user be a guest, will be redirected to guest section
 const isGuest = () => window.location = `${ORIGIN_ROOT}/guest.html`;
 //in the case the user is registere and enter into forbidden sites, will be redirected to Index
@@ -55,10 +32,10 @@ const RESTRICTED = [
 if (GUEST_PATH.includes(PATH)) {
     if (RESTRICTED.includes(PATH))
     {
-        userAuthentication(isRestricted, importElements)
+        userAuthentication(isRestricted, index)
     } else {
-        importElements();
+        index();
     }
 } else {
-    userAuthentication(importElements, isGuest)
+    userAuthentication(index, isGuest)
 }
