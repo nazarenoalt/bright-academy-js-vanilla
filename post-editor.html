@@ -20,7 +20,41 @@
 
     <!--Main content-->
     <section class="main-content">
-            <!--Post data container -->
+
+        <form id="post-formulary" method="POST">
+
+            <span class="span-title">
+                <label for="post-title">Título:</label>
+                <input type="text" class="post-title"
+                       id="post-title" name="title">
+            </span>
+
+            <div class="editor" id="editor-container" name="content"></div>
+
+            <div class="item-creator">
+                <h3> Diseña un item para la clase</h3>
+                <select class="selector" id="difficulty" name="difficulty">
+                    <option value="B">easy</option>
+                    <option value="I">moderate</option>
+                    <option value="A">difficult</option>
+                </select>
+
+
+                <!--Emoji Container -->
+                <div id="emoji_box_container">
+
+                </div>
+                <div  class="easy" id="item-background">
+                </div>
+            </div>
+
+            <!--Submit BUtton -->
+            <button id="submit-button" class="submit-button" name="submit-button">Crear Clase</button>
+
+        </form>
+
+            <!--
+            Post data container
             <div class="post-data__container">
                 <span class="span-title">
                     <label for="post-title">Título:</label>
@@ -34,10 +68,10 @@
                 </span>
             </div>
 
-            <!--Post editor-->
+            &lt;!&ndash;Post editor&ndash;&gt;
             <div class="editor" id="editor-container" name="content"></div>
 
-            <!--Item creator-->
+            &lt;!&ndash;Item creator&ndash;&gt;
             <div class="item-creator">
                 <h3> Diseña un item para la clase</h3>
                 <select class="selector" id="level-selector" onchange="changeDifficult()">
@@ -46,16 +80,16 @@
                     <option value="3">difficult</option>
                 </select>
 
-                <!--Emoji container-->
+                &lt;!&ndash;Emoji container&ndash;&gt;
                 <div id="emoji_box_container">
                     
                 </div>
                 <div  class="easy" id="item-background">
                 </div>
             </div>
-            <!--Submit Button-->
+            &lt;!&ndash;Submit Button&ndash;&gt;
             <button id="submit-button" class="submit-button" name="submit-button">Crear Clase</button>
-        
+        -->
     </section>
 
     <!--Sidebar charged since import.js-->

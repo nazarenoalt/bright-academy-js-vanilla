@@ -1,18 +1,18 @@
-const levelSelector = document.querySelector('#level-selector');
+const levelSelector = document.querySelector('#difficulty');
 const itemBackground = document.querySelector('#item-background');
 
 const changeDifficult = () => {
    switch(levelSelector.value) {
-        case "1":
+        case "B":
             itemBackground.className = 'easy';
             break;
-        case "2":
+        case "I":
             itemBackground.className = 'moderate';
             break;
-        case "3":
+        case "A":
             itemBackground.className = 'difficult';
             break;
         }
-} 
+}
 
-levelSelector.addEventListener('onchange', changeDifficult);
+levelSelector.addEventListener('change', changeDifficult);
