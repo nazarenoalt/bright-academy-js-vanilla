@@ -1,4 +1,5 @@
 import { API_URL, AUTH_TOKEN } from "./constants.js";
+import { ORIGIN_ROOT } from "./root.js";
 
 let toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -34,6 +35,7 @@ const POST_TITLE = document.querySelector('#post-title');
 const POST_CONTENT = document.querySelector('.ql-editor');
 const POST_FORMULARY = document.querySelector('#post-formulary');
 const POST_DIFFICULTY = document.querySelector('#difficulty')
+const POST_ANCHOR = document.querySelector("#post-anchor")
 const formData = new FormData();
 
 document.addEventListener('click', () => {
@@ -54,9 +56,8 @@ POST_FORMULARY.addEventListener('submit', (ev) => {
         headers : {
             Authorization : `Token ${AUTH_TOKEN()}`,
         }
-    }).then(response => response.json())
-        .then(data => console.log(data))
-        .catch(err => console.error(err))
+    }).then(resp => window.location = `${ORIGIN_ROOT}/success.html`)
+    .catch(err => console.error(err))
 
 })
 
