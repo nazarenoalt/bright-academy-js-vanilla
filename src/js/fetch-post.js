@@ -1,4 +1,4 @@
-import { API_URL} from "./components/constants.js";
+import { API_URL} from "./constants.js";
 
 const postFormulary = document.querySelector('#post_container');
 const post_id = '1';

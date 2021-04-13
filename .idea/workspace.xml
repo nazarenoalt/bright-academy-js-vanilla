@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="535042ed-2b19-4041-b622-c58fa94bc556" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post-creation.html" beforeDir="false" afterPath="$PROJECT_DIR$/post-editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/fetch-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/fetch-post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/post-creation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/post-editor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +68,7 @@
       <recent name="$PROJECT_DIR$/src/layouts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js" />
       <recent name="$PROJECT_DIR$/src/js/components" />
     </key>
   </component>
@@ -100,7 +102,8 @@
       <workItem from="1617734866676" duration="5088000" />
       <workItem from="1617833069681" duration="842000" />
       <workItem from="1617921056191" duration="2348000" />
-      <workItem from="1618255383531" duration="1160000" />
+      <workItem from="1618255383531" duration="2177000" />
+      <workItem from="1618336815827" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="created &lt;course-item&gt; component">
       <created>1617572694086</created>
