@@ -1,2 +1,2 @@
-export const ORIGIN_ROOT = `${window.location.origin}/bright-academy`
+export const ORIGIN_ROOT = `${window.location.origin}`
 

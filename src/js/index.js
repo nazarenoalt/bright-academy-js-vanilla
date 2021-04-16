@@ -9,25 +9,25 @@ const isGuest = () => window.location = `${ORIGIN_ROOT}/guest.html`;
 const isRestricted = () => window.location = ORIGIN_ROOT;
 
 const PATH = window.location.pathname;
+
 const GUEST_PATH = [
-    '/bright-academy/',
-    '/bright-academy',
-    '/bright-academy/index.html/',
-    '/bright-academy/index.html',
-    '/bright-academy/login.html/',
-    '/bright-academy/login.html',
-    '/bright-academy/signup.html/',
-    '/bright-academy/signup.html',
-    '/bright-academy/guest.html/',
-    '/bright-academy/guest.html',
+    '/',
+    '/index.html/',
+    '/index.html',
+    '/login.html/',
+    '/login.html',
+    '/signup.html/',
+    '/signup.html',
+    '/guest.html/',
+    '/guest.html',
 ]
 const RESTRICTED = [
-    '/bright-academy/login.html/',
-    '/bright-academy/login.html',
-    '/bright-academy/signup.html/',
-    '/bright-academy/signup.html',
-    '/bright-academy/guest.html/',
-    '/bright-academy/guest.html',
+    '/login.html/',
+    '/login.html',
+    '/signup.html/',
+    '/signup.html',
+    '/guest.html/',
+    '/guest.html',
 ]
 if (GUEST_PATH.includes(PATH)) {
     if (RESTRICTED.includes(PATH))
