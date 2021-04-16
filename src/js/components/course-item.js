@@ -2,9 +2,6 @@ class courseItem extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
-
-        this.date = this.getAttribute('date');
-        this.coursetitle = this.getAttribute('coursetitle');
     }
 
     static get observedAttributes() {
@@ -16,10 +13,10 @@ class courseItem extends HTMLElement {
             this.emoji = newVal;
         }
         if (attr === 'coursetitle') {
-            this.courseTitle = newVal;
+            this.coursetitle = newVal;
         }
         if (attr === 'date') {
-            this.courseDate = newVal;
+            this.date= newVal;
         }
         if (attr === 'difficulty') {
             this.difficulty = newVal;
@@ -90,16 +87,16 @@ class courseItem extends HTMLElement {
                 }
                 
                 /*Color of icons depending of level*/
-                .course-item.beginner {
+                .course-item.B {
                     background-color: var(--blue);
                     border: 5px solid var(--blue-2);
                 }
                 
-                .course-item.elementary {
+                .course-item.A {
                     background-color: var(--orange);
                     border: 5px solid var(--orange-2);
                 }
-                .course-item.intermediate {
+                .course-item.I {
                     background-color: var(--green);
                     border: 5px solid var(--green-2);
                 }

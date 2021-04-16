@@ -1,29 +1,66 @@
-const newContainer = document.getElementById('new-container');
+import { API_URL, AUTH_TOKEN } from "./constants.js";
 
-let item = document.querySelectorAll('.course-container');
-let nodos = [];
-let counter = 0;
+function fetchPosts() {
+    const URL = `${API_URL}posts/`;
+    const container = document.createElement('div');
+    container.classList = 'courses-list';
 
-for (let i = 0; i < item.length; i++) {
-    counter++;
-    if(counter === 2) {
-
-        let nodo = document.createElement('div');
-        nodo.classList.add('wrapped') 
-
-        nodo.append(item[i-1], item[i])
-        nodos.push(nodo);
-        
-    } else if(counter === 5) {
-
-        let nodo = document.createElement('div');
-        nodo.classList.add('wrapped') 
-
-        nodo.append(item[i-2], item[i-1], item[i])
-        nodos.push(nodo)
-        counter = 0;
-
-   }
+    container.setAttribute('id','new-container')
+    fetch(URL, {method:"GET", headers: {Authorization: `Token ${AUTH_TOKEN()}`}})
+        .then(response => response.json())
+        .then(data => {
+            data.sort((a, b) => b.id - a.id);
+            console.log(data);
+            return data;
+        })
+        .then(data => {
+            data.forEach(element => {
+                const component = document.createElement('course-item');
+                component.setAttribute('class', 'course-container')
+                component.setAttribute('emoji', '006-shooting-star.svg')
+                component.setAttribute('coursetitle', `${element.title}`)
+                component.setAttribute('date',  `${element.created}`)
+                component.setAttribute('difficulty',  `${element.difficulty}`)
+                container.append(component)
+            });
+            document.querySelector('.main-content').append(container);
+            orderPosts();
+        })
+        .catch(err => console.error(err))
 }
 
-newContainer.append(...nodos);
+function orderPosts() {
+    const newContainer = document.getElementById('new-container');
+
+    let item = document.querySelectorAll('.course-container');
+    console.log(item)
+    let nodos = [];
+    let counter = 0;
+    
+    for (let i = 0; i < item.length; i++) {
+        counter++;
+        if(counter === 2) {
+    
+            let nodo = document.createElement('div');
+            nodo.classList.add('wrapped') 
+    
+            nodo.append(item[i-1], item[i])
+            nodos.push(nodo);
+            
+        } else if(counter === 5) {
+    
+            let nodo = document.createElement('div');
+            nodo.classList.add('wrapped') 
+    
+            nodo.append(item[i-2], item[i-1], item[i])
+            nodos.push(nodo)
+            counter = 0;
+    
+       }
+    }
+    
+    newContainer.append(...nodos);
+}
+
+fetchPosts();
+
