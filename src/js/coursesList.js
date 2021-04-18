@@ -1,5 +1,6 @@
 import { API_URL, AUTH_TOKEN } from "./constants.js";
 
+moment.format();
 function fetchPosts() {
     const URL = `${API_URL}posts/`;
     const container = document.createElement('div');
@@ -31,12 +32,10 @@ function fetchPosts() {
 
 function orderPosts() {
     const newContainer = document.getElementById('new-container');
-
-    let item = document.querySelectorAll('.course-container');
-    console.log(item)
+    let item = document.querySelectorAll('course-item');
     let nodos = [];
     let counter = 0;
-    
+
     for (let i = 0; i < item.length; i++) {
         counter++;
         if(counter === 2) {
@@ -58,7 +57,6 @@ function orderPosts() {
     
        }
     }
-    
     newContainer.append(...nodos);
 }
 

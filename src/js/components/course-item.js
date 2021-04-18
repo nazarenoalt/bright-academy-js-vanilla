@@ -2,6 +2,7 @@ class courseItem extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
+        this.isRendered = false;
     }
 
     static get observedAttributes() {
@@ -58,6 +59,7 @@ class courseItem extends HTMLElement {
                 --orange: #ffa500;
                 --orange-2: #df7e00;
             }
+
             * {
                 margin: 0;
                 padding: 0;
@@ -65,6 +67,7 @@ class courseItem extends HTMLElement {
                 font-family: 'Poppins', Arial, Helvetica, sans-serif;
                 list-style: none;
             }
+
                 .title {
                     margin: 70px 20px;
                     font-size: 2rem;
@@ -96,10 +99,12 @@ class courseItem extends HTMLElement {
                     background-color: var(--orange);
                     border: 5px solid var(--orange-2);
                 }
+
                 .course-item.I {
                     background-color: var(--green);
                     border: 5px solid var(--green-2);
                 }
+
                 .course-item span {
                     line-height:100px;
                     font-size: 3rem;
@@ -127,11 +132,16 @@ class courseItem extends HTMLElement {
 
     render() {
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
+        this.isRendered = true;
     }
 
     connectedCallback() {
-        this.render();
+        console.log(this.isRendered)
+        if(!this.isRendered) {
+            this.render();
+        }
     }
+
 }
 
 customElements.define('course-item', courseItem);
