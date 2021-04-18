@@ -7,4 +7,13 @@
     text-align: center;
     line-height: 2rem;
 }
+.courses {
+    padding: 0 0 30px;
+}
+.hero-buttons {
+    margin-bottom: 20px;
+}
+.guest {
+    margin-bottom: 20px;
 
+}
