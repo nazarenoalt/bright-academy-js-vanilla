@@ -1,31 +1,55 @@
+import {userAuthentication} from '../auth.js'
 class sidebarComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
+        
     }
 
-    getTemplate() {
+    async getTemplate() {
         const template = document.createElement('template');
+        template.innerHTML = this.getAuth();
         template.innerHTML = `
-                       <div class="component">
-                            <ul class="list">
-                                <li>
-                                    <a href="#">Mi Cuenta</a>
-                                </li>
-                                <li>
-                                    <a href="#">Mis Cursos</a>
-                                </li>
-                                <li>
-                                    <a href="#">Ajustes</a>
-                                </li>
-                            </ul>
-                       </div>
+            ${this.getAuth()}
             ${this.getStyle()}
-        }
             `
         return template;
     }
-
+    
+    getAuth() {
+        const isTrue = () => {
+            return `
+                <div class="component">
+                <ul class="list">
+                    <li>
+                        <a href="#">Mi Cuenta</a>
+                    </li>
+                    <li>
+                        <a href="#">Mis Cursos</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajustes</a>
+                    </li>
+                    <li>
+                        <a href="#">Desconectarse</a>
+                    </li>
+                </ul>
+            </div>
+            `;
+        }
+        const isFalse = () => {
+            return `
+                <div class="component">
+                <ul class="list">
+                    <li>
+                        <a href="#">Mi Cuenta</a>
+                    </li>
+                </ul>
+                </div>
+            `;
+        }
+        return userAuthentication(isTrue, isFalse);
+    }
     getStyle() {
         return `
             <style>
@@ -64,7 +88,6 @@ class sidebarComponent extends HTMLElement {
 
     render() {
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
-
     }
 
     connectedCallback() {
