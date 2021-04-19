@@ -1,24 +1,13 @@
-import {userAuthentication} from '../auth.js'
+import {getCookies} from '../constants.js';
 class sidebarComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
-        
-    }
-
-    static get observedAttributes() {
-        return ['authenticated']
-    }
-
-    attributeChangedCallback(attr, oldVal, newVal) {
-        if(attr === 'authenticated') {
-            this.authenticated = newVal;
-        }
+        console.log(getCookies().auth);
     }
 
     getTemplate() {
         const template = document.createElement('template');
-        console.log(this.authenticated)
             template.innerHTML = `
             <div class="component">
                 <ul class="list">

@@ -1,8 +1,17 @@
 export const API_URL = 'http://brightacademy.pythonanywhere.com/api/';
-const AUTH_COOKIE = document.cookie //return the specific array that contains the token
-    .split(';')
-    .map(cok => cok.split('='))
-    .filter(cookie => cookie[0] === "access_token");
 
-//separate the array and return only the token
-export const AUTH_TOKEN = () => AUTH_COOKIE.length !== 0 ? AUTH_COOKIE[0][1] : '';
+export const getCookies = () => {
+    let cookies = document.cookie;
+    if(cookies.indexOf(';')>0) {
+        let getString = cookies.split('; ')
+        let splitStrings = getString.map(str => str.split('='));
+        let cookiesList = {}
+        for(let i = 0; i < splitStrings.length; i++) {
+            let tmp = splitStrings[i];
+            cookiesList[tmp[0]] = tmp[1];
+        }
+        return cookiesList
+    }
+}
+
+export const AUTH_TOKEN = getCookies().access_token

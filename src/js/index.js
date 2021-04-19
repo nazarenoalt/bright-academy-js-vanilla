@@ -42,4 +42,3 @@ if (GUEST_PATH.includes(PATH)) {
 
 const sidebar = document.querySelector('sidebar-component');
 const sidebarContent = () => sidebar.setAttribute('authenticated', 'true');
-userAuthentication(sidebarContent);

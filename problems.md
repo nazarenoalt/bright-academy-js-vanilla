@@ -10,10 +10,11 @@
 [PENDING] The user should can logout
 [PENDING] Create section contact
 [PENDING] solve fetching comments
-[PENDING] solve receiving posts
+[SOLVED] solve receiving posts
 [PENDING] solve receiving comments
-[PENDING] solve receiving the post-list
+[SOLVED] solve receiving the post-list
 [PENDING] burger menu in login, guess and signup
-[PENDING] Post link
+[SOLVED] Post link
 [PENDING] When a post is posted, the user should be redirected to post link
-[PENDING] Posts should be edited;
+[PENDING] Posts should can be edited;
+[PENDING] Posts list disordered again

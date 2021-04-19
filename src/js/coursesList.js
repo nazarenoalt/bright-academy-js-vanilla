@@ -6,7 +6,7 @@ function fetchPosts() {
     container.classList = 'courses-list';
 
     container.setAttribute('id','new-container')
-    fetch(URL, {method:"GET", headers: {Authorization: `Token ${AUTH_TOKEN()}`}})
+    fetch(URL, {method:"GET", headers: {Authorization: `Token ${AUTH_TOKEN}`}})
         .then(response => response.json())
         .then(data => {
             data.sort((a, b) => b.id - a.id);
