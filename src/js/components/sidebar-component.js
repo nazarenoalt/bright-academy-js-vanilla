@@ -1,4 +1,5 @@
-import {getCookies} from '../constants.js';
+import {getCookies, ORIGIN_ROOT} from '../constants.js';
+import {closeSession} from '../close-session.js';
 class sidebarComponent extends HTMLElement {
     constructor() {
         super();
@@ -8,22 +9,7 @@ class sidebarComponent extends HTMLElement {
     getTemplate() {
         const template = document.createElement('template');
             template.innerHTML = `
-            <div class="component">
-                <ul class="list">
-                    <li>
-                        <a href="#">Mi Cuenta</a>
-                    </li>
-                    <li>
-                        <a href="#">Mis Cursos</a>
-                    </li>
-                    <li>
-                        <a href="#">Ajustes</a>
-                    </li>
-                    <li>
-                        <a href="#">Desconectarse</a>
-                    </li>
-                </ul>
-            </div>
+            ${this.defTemplate()}
             ${this.getStyle()}
             `
         
@@ -66,12 +52,52 @@ class sidebarComponent extends HTMLElement {
         `
     }
 
+    defTemplate() {
+        if(getCookies().auth === 'ok') {
+            return `
+                <div class="component">
+                    <ul class="list">
+                        <li>
+                            <a href="${ORIGIN_ROOT}/my_account.html">Mi Cuenta</a>
+                        </li>
+                        <li>
+                            <a href="${ORIGIN_ROOT}/my_courses.html">Mis Cursos</a>
+                        </li>
+                        <li id="disconnect_button">
+                            <a href="">Desconectarse</a>
+                        </li>
+                    </ul>
+                </div>
+        `
+        } else {
+            return `
+                <div class="component">
+                    <ul class="list">
+                        <li>
+                            <a href="${ORIGIN_ROOT}/signup.html">Registrarse</a>
+                        </li>
+                        <li>
+                            <a href="${ORIGIN_ROOT}/login.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            `
+        }
+    }
+    eventListener() {
+        const disconnectButton = this.shadowRoot.querySelector('#disconnect_button');
+        if (disconnectButton) {
+            disconnectButton.addEventListener('click', closeSession);
+        }
+
+    }
     render() {
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
     }
 
     connectedCallback() {
         this.render()
+        this.eventListener()
     }
 }
 
