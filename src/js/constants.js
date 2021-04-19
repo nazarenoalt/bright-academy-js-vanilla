@@ -6,3 +6,5 @@ const AUTH_COOKIE = document.cookie //return the specific array that contains th
 
 //separate the array and return only the token
 export const AUTH_TOKEN = () => AUTH_COOKIE.length !== 0 ? AUTH_COOKIE[0][1] : '';
+
+export const ORIGIN_ROOT = `${window.location.origin}`

@@ -1,6 +1,5 @@
-import { API_URL, AUTH_TOKEN } from "./constants.js";
+import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "./constants.js";
 
-moment.format();
 function fetchPosts() {
     const URL = `${API_URL}posts/`;
     const container = document.createElement('div');
@@ -22,6 +21,7 @@ function fetchPosts() {
                 component.setAttribute('coursetitle', `${element.title}`)
                 component.setAttribute('date',  `${element.created}`)
                 component.setAttribute('difficulty',  `${element.difficulty}`)
+                component.setAttribute('url', `${ORIGIN_ROOT}/courses.html?id=${element.id}`)
                 container.append(component)
             });
             document.querySelector('.main-content').append(container);

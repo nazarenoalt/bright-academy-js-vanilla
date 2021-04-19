@@ -1,5 +1,5 @@
 import {userAuthentication} from "./auth.js";
-import { ORIGIN_ROOT } from "./root.js";
+import { ORIGIN_ROOT } from "./constants.js";
 
 //writing layouts in the DOM
 const index = () => document.body.classList.remove('loading');

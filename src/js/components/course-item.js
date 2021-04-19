@@ -31,7 +31,7 @@ class courseItem extends HTMLElement {
         const template = document.createElement('template');
         template.innerHTML = `
         <div class="course-container">
-            <a  href="${this.url || '#'}">
+            <a  href="${this.url}" target="_blank">
                 <div class="course-item ${this.difficulty || 'beginner'}">
                     <span>
                         <img src="assets/icons/emojis/svg/${this.emoji}" alt="">
