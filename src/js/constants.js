@@ -8,3 +8,16 @@ const AUTH_COOKIE = document.cookie //return the specific array that contains th
 export const AUTH_TOKEN = () => AUTH_COOKIE.length !== 0 ? AUTH_COOKIE[0][1] : '';
 
 export const ORIGIN_ROOT = `${window.location.origin}`
+
+export function getGET() {
+    let loc = document.location.href;
+    let getString = loc.split('?')[1];
+    let GET = getString.split('&')
+    let get = {}
+
+    for(let i = 0; i < GET.length; i++){
+        let tmp = GET[i].split('=');
+        get[tmp[0]] = decodeURI(tmp[1])
+    }
+    return get;
+}
