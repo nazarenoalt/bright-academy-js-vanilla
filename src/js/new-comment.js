@@ -1,4 +1,4 @@
-counter = 500;
+let counter = 500;
 const comments_list = document.querySelectorAll('.comment');
 const num_comments = comments_list.length;
 

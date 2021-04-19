@@ -1,4 +1,4 @@
-import { API_URL, AUTH_TOKEN } from "./constants.js";
+import { API_URL, AUTH_TOKEN, getGET } from "./constants.js";
 
 const postFormulary = document.querySelector('#post_container');
 const post_id = getGET().id;
