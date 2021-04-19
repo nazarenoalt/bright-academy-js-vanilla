@@ -136,7 +136,6 @@ class courseItem extends HTMLElement {
     }
 
     connectedCallback() {
-        console.log(this.isRendered)
         if(!this.isRendered) {
             this.render();
         }

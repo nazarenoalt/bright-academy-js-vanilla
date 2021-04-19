@@ -54,7 +54,7 @@ POST_FORMULARY.addEventListener('submit', (ev) => {
         method : 'POST',
         body: formData,
         headers : {
-            Authorization : `Token ${AUTH_TOKEN()}`,
+            Authorization : `Token ${AUTH_TOKEN}`,
         }
     }).then(resp => window.location = `${ORIGIN_ROOT}/success.html`)
     .catch(err => console.error(err))

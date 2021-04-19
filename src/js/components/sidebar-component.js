@@ -1,31 +1,36 @@
+import {getCookies} from '../constants.js';
 class sidebarComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
+        console.log(getCookies().auth);
     }
 
     getTemplate() {
         const template = document.createElement('template');
-        template.innerHTML = `
-                       <div class="component">
-                            <ul class="list">
-                                <li>
-                                    <a href="#">Mi Cuenta</a>
-                                </li>
-                                <li>
-                                    <a href="#">Mis Cursos</a>
-                                </li>
-                                <li>
-                                    <a href="#">Ajustes</a>
-                                </li>
-                            </ul>
-                       </div>
+            template.innerHTML = `
+            <div class="component">
+                <ul class="list">
+                    <li>
+                        <a href="#">Mi Cuenta</a>
+                    </li>
+                    <li>
+                        <a href="#">Mis Cursos</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajustes</a>
+                    </li>
+                    <li>
+                        <a href="#">Desconectarse</a>
+                    </li>
+                </ul>
+            </div>
             ${this.getStyle()}
-        }
             `
+        
         return template;
     }
-
+    
     getStyle() {
         return `
             <style>
@@ -63,8 +68,7 @@ class sidebarComponent extends HTMLElement {
     }
 
     render() {
-        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
-
+        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
     }
 
     connectedCallback() {

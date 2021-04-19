@@ -39,3 +39,6 @@ if (GUEST_PATH.includes(PATH)) {
 } else {
     userAuthentication(index, isGuest)
 }
+
+const sidebar = document.querySelector('sidebar-component');
+const sidebarContent = () => sidebar.setAttribute('authenticated', 'true');
