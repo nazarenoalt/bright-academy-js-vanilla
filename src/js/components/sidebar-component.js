@@ -6,20 +6,21 @@ class sidebarComponent extends HTMLElement {
         
     }
 
-    async getTemplate() {
-        const template = document.createElement('template');
-        template.innerHTML = this.getAuth();
-        template.innerHTML = `
-            ${this.getAuth()}
-            ${this.getStyle()}
-            `
-        return template;
+    static get observedAttributes() {
+        return ['authenticated']
     }
-    
-    getAuth() {
-        const isTrue = () => {
-            return `
-                <div class="component">
+
+    attributeChangedCallback(attr, oldVal, newVal) {
+        if(attr === 'authenticated') {
+            this.authenticated = newVal;
+        }
+    }
+
+    getTemplate() {
+        const template = document.createElement('template');
+        console.log(this.authenticated)
+            template.innerHTML = `
+            <div class="component">
                 <ul class="list">
                     <li>
                         <a href="#">Mi Cuenta</a>
@@ -35,21 +36,12 @@ class sidebarComponent extends HTMLElement {
                     </li>
                 </ul>
             </div>
-            `;
-        }
-        const isFalse = () => {
-            return `
-                <div class="component">
-                <ul class="list">
-                    <li>
-                        <a href="#">Mi Cuenta</a>
-                    </li>
-                </ul>
-                </div>
-            `;
-        }
-        return userAuthentication(isTrue, isFalse);
+            ${this.getStyle()}
+            `
+        
+        return template;
     }
+    
     getStyle() {
         return `
             <style>
@@ -87,7 +79,7 @@ class sidebarComponent extends HTMLElement {
     }
 
     render() {
-        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
+        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
     }
 
     connectedCallback() {

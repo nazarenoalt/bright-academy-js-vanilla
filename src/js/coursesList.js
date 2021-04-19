@@ -1,6 +1,5 @@
 import { API_URL, AUTH_TOKEN } from "./constants.js";
 
-moment.format();
 function fetchPosts() {
     const URL = `${API_URL}posts/`;
     const container = document.createElement('div');
@@ -11,7 +10,6 @@ function fetchPosts() {
         .then(response => response.json())
         .then(data => {
             data.sort((a, b) => b.id - a.id);
-            console.log(data);
             return data;
         })
         .then(data => {
