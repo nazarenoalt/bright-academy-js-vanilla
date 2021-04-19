@@ -1,4 +1,4 @@
-import { ORIGIN_ROOT } from "./root.js";
+import { ORIGIN_ROOT } from "./constants.js";
 
 const loginForm = document.querySelector('#login-form');
 const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';

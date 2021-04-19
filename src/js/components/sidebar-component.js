@@ -3,7 +3,6 @@ class sidebarComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
-        console.log(getCookies().auth);
     }
 
     getTemplate() {
@@ -30,7 +29,7 @@ class sidebarComponent extends HTMLElement {
         
         return template;
     }
-    
+
     getStyle() {
         return `
             <style>
