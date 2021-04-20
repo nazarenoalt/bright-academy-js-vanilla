@@ -15,7 +15,7 @@ loginForm.addEventListener('submit', (event) => {
             }
         })
         .then(data => {
-            document.cookie = `auth=ok`;
+            document.cookie = `auth=true`;
             document.cookie = `access_token=${data.access_token}`;
             document.cookie = `username=${data.username}`;
             document.cookie = `first_name=${data.first_name}`;

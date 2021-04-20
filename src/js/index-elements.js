@@ -1,4 +1,4 @@
-import {userAuthentication} from './auth.js'
+import {authenticationByCookies} from './auth.js'
 
 //Hero
 
@@ -20,4 +20,5 @@ const isGuest = () => {
   `;
 }
 
-userAuthentication(isAuth, isGuest);
+
+authenticationByCookies(isAuth, isGuest);

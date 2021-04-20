@@ -53,7 +53,7 @@ class sidebarComponent extends HTMLElement {
     }
 
     defTemplate() {
-        if(getCookies().auth === 'ok') {
+        if(getCookies().auth === 'true') {
             return `
                 <div class="component">
                     <ul class="list">
