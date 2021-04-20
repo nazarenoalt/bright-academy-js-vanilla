@@ -4,13 +4,13 @@ const itemBackground = document.querySelector('#item-background');
 const changeDifficult = () => {
    switch(levelSelector.value) {
         case "B":
-            itemBackground.className = 'easy';
+            itemBackground.className = 'item-background easy';
             break;
         case "I":
-            itemBackground.className = 'moderate';
+            itemBackground.className = 'item-background moderate';
             break;
         case "A":
-            itemBackground.className = 'difficult';
+            itemBackground.className = 'item-background difficult';
             break;
         }
 }
