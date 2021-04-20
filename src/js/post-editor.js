@@ -1,5 +1,4 @@
 import { API_URL, AUTH_TOKEN } from "./constants.js";
-import { ORIGIN_ROOT } from "./root.js";
 
 let toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -25,8 +24,8 @@ let toolbarOptions = [
    
 }
 
-let editor = new Quill('#editor-container', options);
-var editor_content = document.querySelector('.ql-editor').outerHTML;
+let editor = new Quill('#editor_container', options);
+let editor_content = document.querySelector('.ql-editor').outerHTML;
 
 //SENDING POST BBY FETCH
 
@@ -35,7 +34,6 @@ const POST_TITLE = document.querySelector('#post-title');
 const POST_CONTENT = document.querySelector('.ql-editor');
 const POST_FORMULARY = document.querySelector('#post-formulary');
 const POST_DIFFICULTY = document.querySelector('#difficulty')
-const POST_ANCHOR = document.querySelector("#post-anchor")
 const formData = new FormData();
 
 document.addEventListener('click', () => {
@@ -43,8 +41,7 @@ document.addEventListener('click', () => {
 
 })
 
-console.log(formData)
-POST_FORMULARY.addEventListener('submit', (ev) => {
+/* POST_FORMULARY.addEventListener('submit', (ev) => {
     ev.preventDefault()
     formData.append('title', POST_TITLE.value)
     formData.append('content', POST_CONTENT.innerHTML)
@@ -56,8 +53,9 @@ POST_FORMULARY.addEventListener('submit', (ev) => {
         headers : {
             Authorization : `Token ${AUTH_TOKEN}`,
         }
-    }).then(resp => window.location = `${ORIGIN_ROOT}/success.html`)
+    }).then(resp => resp.json())
+    .then(data => console.log(data, data.id))
     .catch(err => console.error(err))
 
-})
+}) */
 

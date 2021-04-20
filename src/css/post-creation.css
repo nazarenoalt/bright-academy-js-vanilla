@@ -3,11 +3,20 @@
 
 
 .ql-editor {
-    height: 300px;
+    min-height: 500px;
 }
-#editor-container {
+.ql-toolbar {
+    min-width: 100%;
+}
+.post-formulary {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#editor_container {
     width: 100%;
-    height: 100%;
+    min-height: 500px;
 }
 
 .post-data__container {
@@ -35,30 +44,41 @@
     margin: 10px;
 }
 .submit-button {
-    width: 300px;
-    height: 170px;
     background-color: var(--dark-blue);
     outline: none;
     border: none;
     color: var(--white);
     font-size: 1.5rem;
     margin-bottom: -20px;
-    border-radius: 15px;
+    border-radius: 100px;
+    padding: 20px 30px;
     transition: background-color .12s;
 }
 
 .item-creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 50px 0;
 }
 .item-creator h3 {
     text-align: center;
     margin-bottom: 30px;
 }
+.difficult-selector-container {
+    margin-top: 30px;
+}
 .selector {
     display: block;
     width: 200px;
-    height: 30px;
-    margin: 0 auto 15px;
+    height: 50px;
+    margin: 15px auto;
+    font-size: 1.5rem;
+    outline: none;
+    padding-left: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: white;
 }
 
 #item-background {
@@ -66,9 +86,27 @@
     height: 150px;
     border-radius: 100%;
     margin: 0 auto;
-    margin-top: 30px;
     display: flex;
     place-content: center;
+}
+
+.emoji-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 32px);
+    grid-template-rows: repeat(auto-fill, 32px);
+    grid-auto-columns: 32px;
+    grid-auto-flow: row;
+    flex-wrap: wrap;
+    min-width: 377px;
+    max-width: 80%;
+    gap: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    overflow: scroll;
+    margin: 0 auto;
+}
+.emoji-selected {
+    border: 1px solid red;
 }
 
 .item-emoji {
@@ -92,28 +130,22 @@
 
 }
 
-@media screen and (min-width: 500px ) {
-    .selector {
-        display: inline-block;
-        margin: 15px;
-    }
-}
 @media screen and (min-width:794px) {
-
- #editor-container, .ql-toolbar {
-     min-width: 794px;
-     max-width: 85%;
- }   
- .post-data__container {
-    display: flex;
-    max-width: 85%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-}
-}
-@media screen and (min-width: 1024px) {
-    .ql-toolbar {
-        min-width: 85%;
+    .post-data__container {
+        display: flex;
+        max-width: 85%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .emoji-box-container {
+        min-width: 794px;
+    }
+    .difficult-selector-container {
+        display: flex;
+        align-items: center;
+    }
+    .selector {
+        margin-right: 30px;
     }
 }
