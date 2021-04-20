@@ -1,12 +1,13 @@
-import {authenticationByCookies} from './auth.js'
+import {authenticationByCookies} from '../utils/auth.js'
 
-//Hero
+const hero = document.querySelector('#hero');
 
 const isAuth = () => {
   hero.innerHTML = `
     <h1 class="title guest">¡Bienvenido a Bright Academy!</h1>
   `;
 }
+
 const isGuest = () => {
   hero.innerHTML = `
     <article class="hero-presentation" id="hero">
@@ -19,6 +20,5 @@ const isGuest = () => {
     </article>
   `;
 }
-
 
 authenticationByCookies(isAuth, isGuest);

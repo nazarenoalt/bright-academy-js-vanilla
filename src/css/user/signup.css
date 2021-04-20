@@ -1,6 +1,6 @@
-@import 'general.css';
-@import 'formulary.css';
-@import 'main-content.css';
+@import '../templates/general.css';
+@import '../templates/formulary.css';
+@import '../templates/main-content.css';
 
 @media screen and (min-width: 1024px) {
     

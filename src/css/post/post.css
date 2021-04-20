@@ -1,6 +1,6 @@
-@import 'general.css';
-@import 'main-content.css';
-@import 'formulary.css';
+@import '../templates/general.css';
+@import '../templates/main-content.css';
+@import '../templates/formulary.css';
 
 .main-content {
     display: grid;

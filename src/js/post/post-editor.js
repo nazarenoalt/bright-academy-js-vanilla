@@ -1,4 +1,4 @@
-import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "./constants.js";
+import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../utils/constants.js";
 
 let toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -27,19 +27,12 @@ let toolbarOptions = [
 let editor = new Quill('#editor_container', options);
 let editor_content = document.querySelector('.ql-editor').outerHTML;
 
-//SENDING POST BBY FETCH
-
 const POST_API_URL = `${API_URL}posts/`
 const POST_TITLE = document.querySelector('#post-title');
 const POST_CONTENT = document.querySelector('.ql-editor');
 const POST_FORMULARY = document.querySelector('#post-formulary');
 const POST_DIFFICULTY = document.querySelector('#difficulty')
 const formData = new FormData();
-
-document.addEventListener('click', () => {
-
-
-})
 
 POST_FORMULARY.addEventListener('submit', (ev) => {
     ev.preventDefault()

@@ -1,4 +1,4 @@
-import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "./constants.js";
+import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../utils/constants.js";
 
 function fetchPosts() {
     const URL = `${API_URL}posts/`;

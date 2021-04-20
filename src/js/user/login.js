@@ -1,5 +1,3 @@
-import { ORIGIN_ROOT } from "./constants.js";
-
 const loginForm = document.querySelector('#login-form');
 const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
 
@@ -19,7 +17,7 @@ loginForm.addEventListener('submit', (event) => {
             document.cookie = `access_token=${data.access_token}`;
             document.cookie = `username=${data.username}`;
             document.cookie = `first_name=${data.first_name}`;
-            window.location = `${ORIGIN_ROOT}/index.html`
+            window.location = `../../../index.html`
         })
         .catch(err => console.error(err));
 })

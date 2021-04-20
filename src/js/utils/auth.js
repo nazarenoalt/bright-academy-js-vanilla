@@ -1,4 +1,5 @@
 import { API_URL, AUTH_TOKEN, getCookies } from "./constants.js";
+
 export function userAuthentication(caseTrue, caseFalse) {
 
     const AUTH_API_URL = `${API_URL}utils/validate_token/`;

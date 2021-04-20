@@ -1,5 +1,5 @@
-import {userAuthentication} from "./auth.js";
-import { ORIGIN_ROOT } from "./constants.js";
+import {userAuthentication} from "./utils/auth.js";
+import { ORIGIN_ROOT } from "./utils/constants.js";
 
 //writing layouts in the DOM
 const index = () => document.body.classList.remove('loading');
@@ -12,8 +12,8 @@ const PATH = window.location.pathname;
 
 const GUEST_PATH = [
     '/',
-    '/index.html/',
-    '/index.html',
+    '/index-template.html/',
+    '/index-template.html',
     '/login.html/',
     '/login.html',
     '/signup.html/',
