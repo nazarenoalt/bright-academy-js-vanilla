@@ -1,4 +1,5 @@
-import { API_URL, AUTH_TOKEN, getCookies } from "./constants.js";
+import { API_URL, AUTH_TOKEN } from "./constants.js";
+import { getCookies } from "./cookies.js"
 
 export function userAuthentication(caseTrue, caseFalse) {
 

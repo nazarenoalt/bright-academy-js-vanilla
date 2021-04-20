@@ -1,5 +1,6 @@
-import {getCookies, ORIGIN_ROOT} from '../utils/constants.js';
-import {closeSession} from '../utils/close-session.js';
+import { ORIGIN_ROOT } from '../utils/constants.js';
+import { closeSession } from '../utils/close-session.js';
+import { getCookies } from "../utils/cookies.js"
 class sidebarComponent extends HTMLElement {
     constructor() {
         super();

@@ -1,5 +1,5 @@
 import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../utils/constants.js";
-
+import { warningText } from '../utils/warning-text.js';
 let toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
     ['blockquote'],
@@ -31,8 +31,12 @@ const POST_API_URL = `${API_URL}posts/`
 const POST_TITLE = document.querySelector('#post-title');
 const POST_CONTENT = document.querySelector('.ql-editor');
 const POST_FORMULARY = document.querySelector('#post-formulary');
-const POST_DIFFICULTY = document.querySelector('#difficulty')
+const POST_DIFFICULTY = document.querySelector('#difficulty');
+const SUBMIT_BUTTON = document.querySelector('#submit-button');
 const formData = new FormData();
+
+warningText('Este es un texto de prueba', SUBMIT_BUTTON);
+
 
 POST_FORMULARY.addEventListener('submit', (ev) => {
     ev.preventDefault()
@@ -40,15 +44,20 @@ POST_FORMULARY.addEventListener('submit', (ev) => {
     formData.append('content', POST_CONTENT.innerHTML)
     formData.append('difficulty', POST_DIFFICULTY.value)
 
-    fetch(POST_API_URL, {
-        method : 'POST',
-        body: formData,
-        headers : {
-            Authorization : `Token ${AUTH_TOKEN}`,
-        }
-    }).then(resp => resp.json())
-    .then(data => document.location = `${ORIGIN_ROOT}/courses.html?id=${data.id}`)
-    .catch(err => console.error(err))
+    if(POST_CONTENT.textContent.length >= 500) {
+        fetch(POST_API_URL, {
+            method : 'POST',
+            body: formData,
+            headers : {
+                Authorization : `Token ${AUTH_TOKEN}`,
+            }
+        }).then(resp => resp.json())
+        .then(data => document.location = `${ORIGIN_ROOT}/courses.html?id=${data.id}`)
+        .catch(err => console.error(err))
+    } else {
+        warningText('El post debe tener al menos 500 caracteres', SUBMIT_BUTTON);
+    }
+  
 
+    
 })
-
