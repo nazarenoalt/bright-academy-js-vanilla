@@ -11,10 +11,8 @@ export function userAuthentication(caseTrue, caseFalse) {
         .then(response => {
             if (response.ok) {
                 caseTrue();
-                document.cookie = 'auth=ok'
             } else {
                caseFalse();
-               document.cookie = 'auth=off'
             }
         })
 }
