@@ -1,5 +1,6 @@
 import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../utils/constants.js";
 import { warningText } from '../utils/warning-text.js';
+
 let toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
     ['blockquote'],
@@ -33,11 +34,25 @@ const POST_CONTENT = document.querySelector('.ql-editor');
 const POST_FORMULARY = document.querySelector('#post-formulary');
 const POST_DIFFICULTY = document.querySelector('#difficulty');
 const SUBMIT_BUTTON = document.querySelector('#submit-button');
+const CLOSE_BUTTON = document.querySelector('#close-button');
+const PREVIEW_BUTTON = document.querySelector('#preview-button');
+const PREVIEW_CONTAINER = document.querySelector('#preview-container')
+const PREVIEW_BACKGROUND = document.querySelector('#preview_background');
 const formData = new FormData();
 
-warningText('Este es un texto de prueba', SUBMIT_BUTTON);
+//Preview Buttons
+const openPreview = () => {
+    PREVIEW_CONTAINER.style.display = 'flex';
+    PREVIEW_BACKGROUND.style.display= 'block'
+}
 
+CLOSE_BUTTON.addEventListener('click', (ev) => {
+    ev.currentTarget.parentNode.style.display = "none";
+    PREVIEW_BACKGROUND.style.display = "none";
+});
 
+PREVIEW_BUTTON.addEventListener('click', openPreview);
+//Submitting post
 POST_FORMULARY.addEventListener('submit', (ev) => {
     ev.preventDefault()
     formData.append('title', POST_TITLE.value)
@@ -55,9 +70,6 @@ POST_FORMULARY.addEventListener('submit', (ev) => {
         .then(data => document.location = `${ORIGIN_ROOT}/courses.html?id=${data.id}`)
         .catch(err => console.error(err))
     } else {
-        warningText('El post debe tener al menos 500 caracteres', SUBMIT_BUTTON);
+        warningText('El post debe tener al menos 500 caracteres', PREVIEW_BUTTON);
     }
-  
-
-    
 })
