@@ -1,4 +1,4 @@
-import { API_URL, AUTH_TOKEN } from "./constants.js";
+import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "./constants.js";
 
 let toolbarOptions = [
     ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
@@ -41,7 +41,7 @@ document.addEventListener('click', () => {
 
 })
 
-/* POST_FORMULARY.addEventListener('submit', (ev) => {
+POST_FORMULARY.addEventListener('submit', (ev) => {
     ev.preventDefault()
     formData.append('title', POST_TITLE.value)
     formData.append('content', POST_CONTENT.innerHTML)
@@ -54,8 +54,8 @@ document.addEventListener('click', () => {
             Authorization : `Token ${AUTH_TOKEN}`,
         }
     }).then(resp => resp.json())
-    .then(data => console.log(data, data.id))
+    .then(data => document.location = `${ORIGIN_ROOT}/courses.html?id=${data.id}`)
     .catch(err => console.error(err))
 
-}) */
+})
 

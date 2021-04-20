@@ -22,3 +22,5 @@
 [PENDING] Make "Mi cuenta" section
 [PENDING] Make admin sidebar
 [PENDING] Refactorize files and functions
+[PENDING] The post must be sended with a click
+[PENDING] Post must have a minimal cuantity of chars
