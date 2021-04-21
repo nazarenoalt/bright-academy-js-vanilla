@@ -58,6 +58,8 @@ class courseItem extends HTMLElement {
                 --green-2: #5cb12b;
                 --orange: #ffa500;
                 --orange-2: #df7e00;
+                display: flex;
+                justify-content: center;
             }
 
             * {
