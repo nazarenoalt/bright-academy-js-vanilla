@@ -1,4 +1,4 @@
-import { warningText } from '../../utils/warning-text.js';
+import { addWarningText, deleteWarningText, warningTextExists } from '../../utils/warning-text.js';
 
 const PREVIEW_CONTAINER = document.querySelector('#preview-container')
 const PREVIEW_BACKGROUND = document.querySelector('#preview_background');
@@ -18,7 +18,7 @@ const openPreview = () => {
   PREVIEW_CONTAINER.style.display = 'flex';
   PREVIEW_BACKGROUND.style.display= 'block'
 
-  setTimeout(() => SUBMIT_BUTTON.removeAttribute('disabled'), 5000);
+  setTimeout(() => SUBMIT_BUTTON.removeAttribute('disabled'), 3000);
 
 }
 
@@ -30,18 +30,16 @@ CLOSE_BUTTON.addEventListener('click', (ev) => {
 });
 
 const checkConditions = () => {
-
   if(POST_CONTENT.textContent.length >= 140 && POST_TITLE.value.length > 4) {
-    PREVIEW_BUTTON.removeEventListener('click', warningText);
-    PREVIEW_BUTTON.addEventListener('click', openPreview);
+    if(warningTextExists('min-char')) {
+      deleteWarningText('min-char');
+    }
+    openPreview()
   } else {
-    PREVIEW_BUTTON.removeEventListener('click', openPreview);
-    PREVIEW_BUTTON.addEventListener('click', () => warningText('El post debe tener al menos 140 caracteres en el contenido y 4 en el título', PREVIEW_BUTTON))
+    addWarningText('El post debe tener al menos 140 caracteres en el contenido y 4 en el título', PREVIEW_BUTTON, 'min-char')
   }
 
 }
 
-//Event listeners to check if the post is ready to a preview
-POST_CONTENT.addEventListener('keydown', checkConditions)
-POST_TITLE.addEventListener('keydown', checkConditions)
-PREVIEW_BUTTON.addEventListener('click', () => warningText('El post debe tener al menos 140 caracteres en el contenido y 4 en el título', PREVIEW_BUTTON))
+console.log(warningTextExists('min-char'))
+PREVIEW_BUTTON.addEventListener('click', checkConditions);
