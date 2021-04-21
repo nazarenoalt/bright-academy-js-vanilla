@@ -13,7 +13,6 @@
 [SOLVED] Refactorize files and functions
 [SOLVED] When a post is posted, the user should be redirected to post link
 [SOLVED] Fix course-editor style
-[PENDING] MAke each component change depending if the user is registered
 [PENDING] Create section contact
 [PENDING] solve fetching comments
 [PENDING] solve receiving comments
