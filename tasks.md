@@ -25,3 +25,4 @@
 [PENDING] Review possibly bugs when creating posts
 [PENDING] Post title must be inserted on tab
 [PENDING] Add moment.js
+[PENDING] Review signup login

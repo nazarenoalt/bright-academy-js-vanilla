@@ -54,15 +54,37 @@ class sidebarComponent extends HTMLElement {
     }
 
     defTemplate() {
-        if(getCookies().auth === 'true') {
+        if(getCookies().auth === 'true' && getCookies().profile_type == 'T') {
             return `
                 <div class="component">
                     <ul class="list">
                         <li>
-                            <a href="${ORIGIN_ROOT}/my-account.html">Mi Cuenta</a>
+                            <a href="${ORIGIN_ROOT}/my-account.html">Mi cuenta</a>
                         </li>
                         <li>
-                            <a href="${ORIGIN_ROOT}/my-courses.html">Mis Cursos</a>
+                            <a href="${ORIGIN_ROOT}/post-editor.html">Nueva clase</a>
+                        </li>
+                        <li>
+                            <a href="${ORIGIN_ROOT}/courses-list.html">Lista de clases</a>
+                        </li>
+                        <li>
+                            <a href="http://brightacademy.pythonanywhere.com/admin/">Panel de Control</a>
+                        </li>
+                        <li id="disconnect_button">
+                            <a href="">Desconectarse</a>
+                        </li>
+                    </ul>
+                </div>
+            `
+        } else if(getCookies().auth === 'true') {
+            return `
+                <div class="component">
+                    <ul class="list">
+                        <li>
+                            <a href="${ORIGIN_ROOT}/my-account.html">Mi cuenta</a>
+                        </li>
+                        <li>
+                            <a href="${ORIGIN_ROOT}/my-courses.html">Mis clases</a>
                         </li>
                         <li id="disconnect_button">
                             <a href="">Desconectarse</a>
@@ -78,7 +100,7 @@ class sidebarComponent extends HTMLElement {
                             <a href="${ORIGIN_ROOT}/signup.html">Registrarse</a>
                         </li>
                         <li>
-                            <a href="${ORIGIN_ROOT}/login.html">Iniciar Sesión</a>
+                            <a href="${ORIGIN_ROOT}/login.html">Iniciar sesión</a>
                         </li>
                     </ul>
                 </div>
@@ -101,5 +123,4 @@ class sidebarComponent extends HTMLElement {
         this.eventListener()
     }
 }
-
 customElements.define('sidebar-component', sidebarComponent)
