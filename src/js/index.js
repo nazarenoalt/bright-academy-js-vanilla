@@ -10,10 +10,11 @@ const isRestricted = () => window.location = ORIGIN_ROOT;
 
 const PATH = window.location.pathname;
 
+//Available paths for guests
 const GUEST_PATH = [
     '/',
-    '/index-template.html/',
-    '/index-template.html',
+    '/index.html/',
+    '/index.html',
     '/login.html/',
     '/login.html',
     '/signup.html/',
@@ -21,6 +22,7 @@ const GUEST_PATH = [
     '/guest.html/',
     '/guest.html',
 ]
+//Restricted for registered users
 const RESTRICTED = [
     '/login.html/',
     '/login.html',
@@ -29,6 +31,7 @@ const RESTRICTED = [
     '/guest.html/',
     '/guest.html',
 ]
+
 if (GUEST_PATH.includes(PATH)) {
     if (RESTRICTED.includes(PATH))
     {
@@ -41,4 +44,3 @@ if (GUEST_PATH.includes(PATH)) {
 }
 
 const sidebar = document.querySelector('sidebar-component');
-const sidebarContent = () => sidebar.setAttribute('authenticated', 'true');
