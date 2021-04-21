@@ -1,0 +1,21 @@
+@import '../templates/general.css';
+@import '../templates/main-content.css';
+
+.main-content {
+  
+}
+.profile-container {
+  width: 100%;
+  height: 100%;
+  padding:50px;
+}
+
+#username {
+  font-size: 2rem;
+}
+.profile__info-span {
+  line-height: 2;
+  font-weight:bold;
+}
+.profile__data-list {
+}

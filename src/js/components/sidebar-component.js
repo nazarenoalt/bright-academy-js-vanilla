@@ -59,10 +59,10 @@ class sidebarComponent extends HTMLElement {
                 <div class="component">
                     <ul class="list">
                         <li>
-                            <a href="${ORIGIN_ROOT}/my_account.html">Mi Cuenta</a>
+                            <a href="${ORIGIN_ROOT}/my-account.html">Mi Cuenta</a>
                         </li>
                         <li>
-                            <a href="${ORIGIN_ROOT}/my_courses.html">Mis Cursos</a>
+                            <a href="${ORIGIN_ROOT}/my-courses.html">Mis Cursos</a>
                         </li>
                         <li id="disconnect_button">
                             <a href="">Desconectarse</a>

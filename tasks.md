@@ -23,3 +23,5 @@
 [PENDING] Make "Mi cuenta" section
 [PENDING] Make admin sidebar
 [PENDING] Review possibly bugs when creating posts
+[PENDING] Post title must be inserted on tab
+[PENDING] Add moment.js
