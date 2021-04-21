@@ -121,8 +121,8 @@ min-height: 71vh;
 
 .close-button {
     position: fixed;
-    top: 50px;
-    right: 100px;
+    top: 32px;
+    right: 60px;
     z-index: 6;
     opacity: 60%;
     transition: opacity .2s;
@@ -144,6 +144,10 @@ min-height: 71vh;
         margin-bottom: 0;
     }
 
+    .close-button {
+        top: 50px;
+        right: 100px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
