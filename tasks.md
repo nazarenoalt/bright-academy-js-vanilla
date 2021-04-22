@@ -13,16 +13,15 @@
 [SOLVED] Refactorize files and functions
 [SOLVED] When a post is posted, the user should be redirected to post link
 [SOLVED] Fix course-editor style
+[SOLVED] Make admin sidebar
+[SOLVED] Make "Mi cuenta" section
+[SOLVED] Review possibly bugs when creating posts
+[SOLVED] Posts list disordered again
 [PENDING] Create section contact
-[PENDING] solve fetching comments
-[PENDING] solve receiving comments
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited;
-[PENDING] Posts list disordered again
 [PENDING] Make "Mis cursos" section
-[PENDING] Make "Mi cuenta" section
-[PENDING] Make admin sidebar
-[PENDING] Review possibly bugs when creating posts
 [PENDING] Post title must be inserted on tab
 [PENDING] Add moment.js
 [PENDING] Review signup login
+[PENDING] Make whatsapp bottom

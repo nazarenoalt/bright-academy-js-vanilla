@@ -17,5 +17,6 @@ fetch(API_POST_URL.replace(':id', post_id), {
     post_content.innerHTML = data.content;
     let date = new Date(data.created);
     post_date.innerHTML = date;
+    html_tab_title.innerHTML = `${data.title} | Bright Academy`;
 })
 .catch(err => console.error(err));
