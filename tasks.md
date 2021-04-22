@@ -24,4 +24,4 @@
 [PENDING] Post title must be inserted on tab
 [PENDING] Add moment.js
 [PENDING] Review signup login
-[PENDING] Make whatsapp bottom
+[PENDING] Make whatsapp button
