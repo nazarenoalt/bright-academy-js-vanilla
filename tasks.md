@@ -17,6 +17,7 @@
 [SOLVED] Make "Mi cuenta" section
 [SOLVED] Review possibly bugs when creating posts
 [SOLVED] Posts list disordered again
+[SOLVED] Make whatsapp button
 [PENDING] Create section contact
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited;
@@ -24,4 +25,4 @@
 [PENDING] Post title must be inserted on tab
 [PENDING] Add moment.js
 [PENDING] Review signup login
-[PENDING] Make whatsapp button
+[PENDING] Create validation for signup and login

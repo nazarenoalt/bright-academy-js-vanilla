@@ -25,23 +25,23 @@
                         <input type="text" class="input-text" id="id_username" name="username" required>
                     </li>
                     <li>
-                        <label for="username">Password</label>
+                        <label for="password">Password</label>
                         <input type="password" class="input-text" id="id_password" name="password" required>
                     </li>
                     <li>
-                        <label for="username">Email</label>
+                        <label for="email">Email</label>
                         <input type="email" class="input-text" id="id_email" name="email" required>
                     </li>
                     <li>
-                        <label for="username">Nombre(s)</label>
+                        <label for="first_name">Nombre(s)</label>
                         <input type="text" class="input-text" id="id_first_name" name="first_name" required>
                     </li>
                     <li>
-                        <label for="username">Apellido(s)</label>
+                        <label for="last_name">Apellido(s)</label>
                         <input type="text" class="input-text" id="id_last_name" name="last_name" required>
                     </li>
                 </ul>
-                <button class="tag" type="submit">Registrarse</button>
+                <input type="submit" class="tag" id="submit">
             </form>
     </section>
 
@@ -53,8 +53,8 @@
         ></footer-component>
     </footer>
 
-    <script src="src/js/user/signup.js"></script>
-    <script src="src/js/index.js" type="module"></script>
+    <script type="module" src="src/js/user/signup/signup.js"></script>
+    <script type="module" src="src/js/index.js" type="module"></script>
     <script type="module" src="src/js/components/header-component.js"></script>
     <script type="module" src="src/js/components/footer-component.js"></script>
 </body>
