@@ -18,11 +18,11 @@
 [SOLVED] Review possibly bugs when creating posts
 [SOLVED] Posts list disordered again
 [SOLVED] Make whatsapp button
+[SOLVED] Review signup login
+[SOLVED] Post title must be inserted on tab
 [PENDING] Create section contact
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited;
 [PENDING] Make "Mis cursos" section
-[PENDING] Post title must be inserted on tab
 [PENDING] Add moment.js
-[PENDING] Review signup login
 [PENDING] Create validation for signup and login
