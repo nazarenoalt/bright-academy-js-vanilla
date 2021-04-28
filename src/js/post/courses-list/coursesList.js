@@ -1,15 +1,18 @@
-import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../utils/constants.js";
+import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../../utils/constants.js";
 
-function fetchPosts() {
+export function fetchPosts(diff) {
     const URL = `${API_URL}posts/`;
     const container = document.createElement('div');
     container.classList = 'courses-list';
-
     container.setAttribute('id','new-container')
+
     fetch(URL, {method:"GET", headers: {Authorization: `Token ${AUTH_TOKEN}`}})
         .then(response => response.json())
         .then(data => {
             data.sort((a, b) => b.id - a.id);
+            if(diff) {
+             return data.filter(e => e.difficulty === diff)
+            }
             return data;
         })
         .then(data => {
@@ -58,6 +61,3 @@ function orderPosts() {
     }
     newContainer.append(...nodos);
 }
-
-fetchPosts();
-

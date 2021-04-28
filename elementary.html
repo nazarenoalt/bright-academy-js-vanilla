@@ -3,63 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <title>Elementary | Bright Academy</title>
-    <link rel="stylesheet" href="src/css/post/elementary.css">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Beginners | Bright Academy</title>
+    <link rel="stylesheet" href="src/css/post/courses-list.css">
 </head>
 
-<body class="container  loading">
+<body class="container loading">
+
+<!--Header charged since import.js-->
+<header class="header" id="header">
+    <header-component></header-component>
+</header>
+
+<!--Main content-->
+<section class="main-content">
+    <h2 class="title">Cursos Principiantes - Beginners</h2>
     
-    <!--Header charged since import.js-->
-    <header class="header" id="header">
-        <header-component></header-component>
-    </header>
+</section>
 
-    <!--Main content-->
-    <section class="main-content">
+<!--Sidebar charged since import.js-->
+<section class="sidebar" id="sidebar">
+    <sidebar-component></sidebar-component>
+</section>
 
-        <h1 class="title">Cursos Elementary</h1>
-        <div class="course-box" >
-            <a href="courses-kids.html">
-                <img src="assets/img/elementary.jpg" alt="Cursos para niños elementary">
-                <span class="description">
-                    <h2>Niños</h2>
-                </span>
-            </a>
-        </div>
-        <div class="course-box" >
-            <a href="courses-teens.html">
-                <img src="assets/img/elementary.jpg" alt="Cursos para adolescentes elementary">
-                <span class="description">
-                    <h2>Adolescentes</h2>
-                </span>
-            </a>
-        </div>
-        <div class="course-box" >
-            <a href="elementary.html">
-                <img src="assets/img/elementary.jpg" alt="Cursos para adultos elementary">
-                <span class="description">
-                    <h2>Adultos</h2>
-                </span>
-            </a>
-        </div>
-    </section>
+<!--Footer charged since import.js-->
+<footer class="footer" id="footer" >
+    <footer-component owner="Profesora Camelia Brignole"
+                      address="Direccion: Avenida Siempreviva 742"
+                      contactLink="#"
+    ></footer-component>
+</footer>
 
-    <!--Sidebar charged since import.js-->
-    <section class="sidebar" id="sidebar">
-        <sidebar-component></sidebar-component>
-    </section>
-
-    <!--Footer charged since import.js-->
-    <footer class="footer" id="footer" >
-        <footer-component owner="Profesora Camelia Brignole"
-                          address="Direccion: Avenida Siempreviva 742"
-                          contactLink="#"
-        ></footer-component>
-    </footer>
-
-    <script src="src/js/index.js" type="module"></script>
-    <script type="module" src="src/js/components/header-component.js"></script>
-    <script type="module" src="src/js/components/footer-component.js"></script>
-    <script type="module" src="src/js/components/sidebar-component.js"></script>
+<script type="module" src="src/js/index.js"></script>
+<script type="module" src="src/js/post/courses-list/elementary.js"></script>
+<script type="module" src="src/js/components/course-item.js"></script>
+<script type="module" src="src/js/components/header-component.js"></script>
+<script type="module" src="src/js/components/footer-component.js"></script>
+<script type="module" src="src/js/components/sidebar-component.js"></script>
 </body>
