@@ -9,9 +9,10 @@ min-height: 71vh;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+.word-break {
     word-break: break-all;
 }
-
 /*Tags*/
 .tag {
     padding: 6px 8px;

@@ -73,6 +73,7 @@ class courseItem extends HTMLElement {
                 .title {
                     margin: 70px 20px;
                     font-size: 2rem;
+                    
                 }
                 
                 .course-container {
@@ -88,9 +89,10 @@ class courseItem extends HTMLElement {
                     width: 100px;
                     height: 100px;
                     border-radius: 100px;
-                    margin: 0 auto;  
+                    margin: 10px auto;  
                     transition: transform .2s;  
                     overflow: hidden;
+                  
                 }
                 
                 /*Color of icons depending of level*/
@@ -124,6 +126,8 @@ class courseItem extends HTMLElement {
                 
                 .course-title {
                     font-weight: bold;
+                    line-height: 1;
+                    text-align: center;
                 }
                 
                 .course-date {
