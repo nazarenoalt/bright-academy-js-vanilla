@@ -28,3 +28,4 @@
 [PENDING] Add moment.js
 [PENDING] Review Cookies existance
 [PENDING] Create post-list for each type of user
+[PENDING] Add "volver atras" option

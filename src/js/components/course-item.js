@@ -80,6 +80,8 @@ class courseItem extends HTMLElement {
                     font-size: 1.5rem;
                     text-align: center;
                     margin: 0 30px 30px;
+                    width: 150px;
+                    height: 150px;
                 }
                 
                 .course-item {
