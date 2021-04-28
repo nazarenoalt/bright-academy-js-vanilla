@@ -20,9 +20,11 @@
 [SOLVED] Make whatsapp button
 [SOLVED] Review signup login
 [SOLVED] Post title must be inserted on tab
+[SOLVED] Create validation for signup and login
 [PENDING] Create section contact
 [PENDING] burger menu in login, guess and signup
-[PENDING] Posts should can be edited;
+[PENDING] Posts should can be edited and erased;
 [PENDING] Make "Mis cursos" section
 [PENDING] Add moment.js
-[PENDING] Create validation for signup and login
+[PENDING] Review Cookies existance
+[PENDING] Create post-list for each type of user

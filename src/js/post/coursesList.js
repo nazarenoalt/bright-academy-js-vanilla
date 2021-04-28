@@ -18,7 +18,7 @@ function fetchPosts() {
                 component.setAttribute('class', 'course-container')
                 component.setAttribute('emoji', '006-shooting-star.svg')
                 component.setAttribute('coursetitle', `${element.title}`)
-                component.setAttribute('date',  `${element.created}`)
+                component.setAttribute('date',  `${new Date(element.created).toLocaleDateString()}`)
                 component.setAttribute('difficulty',  `${element.difficulty}`)
                 component.setAttribute('url', `${ORIGIN_ROOT}/courses.html?id=${element.id}`)
                 container.append(component)

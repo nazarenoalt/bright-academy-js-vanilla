@@ -2,9 +2,8 @@
   "name": "bright-academy",
   "version": "1.0.0",
   "description": "Education Platform for Bright Academy",
-  "main": "./js/importElements.js",
+  "main": "./js/index.js",
   "dependencies": {
-    "moment": "^2.29.1",
     "quill": "^1.3.7"
   },
   "devDependencies": {},

@@ -1,4 +1,3 @@
-import { API_URL } from "../../utils/constants.js";
 import { addWarningText, warningTextExists, deleteWarningText } from "../../utils/warning-text.js"
 
 export const checkUserData = (data) => {

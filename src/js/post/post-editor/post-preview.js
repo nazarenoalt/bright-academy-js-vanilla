@@ -41,5 +41,4 @@ const checkConditions = () => {
 
 }
 
-console.log(warningTextExists('min-char'))
 PREVIEW_BUTTON.addEventListener('click', checkConditions);
