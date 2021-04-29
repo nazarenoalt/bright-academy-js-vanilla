@@ -24,8 +24,16 @@
 [SOLVED] Add friendly dates
 [SOLVED] Create post-list for each type of user
 [SOLVED] Review Cookies existance
+[SOLVED] Burger menu first click menu
 [PENDING] Create section contact
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited and erased;
 [PENDING] Make "Mis cursos" section
-[PENDING] Burger menu first click menu
+[PENDING] Uses unauthorized at least they have a level
+
+[API]
+[EDIT-POST]
+[DELETE-POST]
+[EDIT-PROFILE]
+[MAKE-LEVEL-UNNECESSARY-TO-REGISTER]
+[VERIFY]
