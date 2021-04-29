@@ -21,11 +21,11 @@
 [SOLVED] Review signup login
 [SOLVED] Post title must be inserted on tab
 [SOLVED] Create validation for signup and login
+[SOLVED] Add friendly dates
+[SOLVED] Create post-list for each type of user
+[SOLVED] Review Cookies existance
 [PENDING] Create section contact
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited and erased;
 [PENDING] Make "Mis cursos" section
-[PENDING] Add moment.js
-[PENDING] Review Cookies existance
-[PENDING] Create post-list for each type of user
-[PENDING] Add "volver atras" option
+[PENDING] Burger menu first click menu

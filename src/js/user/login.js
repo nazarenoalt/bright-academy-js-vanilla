@@ -13,11 +13,11 @@ loginForm.addEventListener('submit', (event) => {
             }
         })
         .then(data => {
-            document.cookie = `auth=true`;
-            document.cookie = `access_token=${data.access_token}`;
-            document.cookie = `username=${data.user.username}`;
-            document.cookie = `first_name=${data.user.profile.first_name}`;
-            document.cookie = `profile_type=${data.user.profile.profile_type}`;
+            document.cookie = `auth=true; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+            document.cookie = `access_token=${data.access_token}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+            document.cookie = `username=${data.user.username}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+            document.cookie = `first_name=${data.user.profile.first_name}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+            document.cookie = `profile_type=${data.user.profile.profile_type}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
             window.location = `../../../index.html`
         })
         .catch(err => console.error(err));
