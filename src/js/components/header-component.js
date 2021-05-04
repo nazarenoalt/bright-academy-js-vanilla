@@ -85,9 +85,8 @@ class headerComponent extends HTMLElement {
     switchMenu() {
         const menu = this.shadowRoot.querySelector("#menu")
         const sidebar = document.querySelector('#sidebar');
-        sidebar.style.display = 'none';
         menu.addEventListener('click', () => {
-                sidebar.style.display === 'none'
+                sidebar.style.display !== 'block'
                     ? sidebar.style.display = 'block'
                     : sidebar.style.display = 'none';
             })

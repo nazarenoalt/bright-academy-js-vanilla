@@ -1,6 +1,7 @@
 import { API_URL, AUTH_TOKEN, ORIGIN_ROOT } from "../../utils/constants.js";
+import { EMOJI_ID } from './emoji-box.js';
 
-const POST_API_URL = `${API_URL}posts/`
+const POST_API_URL = `${API_URL}posts/`;
 
 const POST_FORMULARY = document.querySelector('#post-formulary');
 const POST_TITLE = document.querySelector('#post-title');
@@ -15,6 +16,7 @@ const sendPost = (ev) => {
   formData.append('title', POST_TITLE.value)
   formData.append('content', POST_CONTENT.innerHTML)
   formData.append('difficulty', POST_DIFFICULTY.value)
+  formData.append('emoji_id', EMOJI_ID)
 
       fetch(POST_API_URL, {
           method : 'POST',

@@ -101,6 +101,7 @@ a{
     }
 
     #sidebar {
+        display: block;
         grid-area: sidebar;
         width: 270px;
         display: block;

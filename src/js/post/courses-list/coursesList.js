@@ -19,7 +19,7 @@ export function fetchPosts(diff) {
             data.forEach(element => {
                 const component = document.createElement('course-item');
                 component.setAttribute('class', 'course-container')
-                component.setAttribute('emoji', '006-shooting-star.svg')
+                component.setAttribute('emoji', `${element.emoji_id}`)
                 component.setAttribute('coursetitle', `${element.title}`)
                 component.setAttribute('date',  `${new Date(element.created).toLocaleDateString()}`)
                 component.setAttribute('difficulty',  `${element.difficulty}`)

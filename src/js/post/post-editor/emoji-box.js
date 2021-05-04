@@ -122,6 +122,8 @@ const emojiList = [
     '120-briefcase.svg',
 ]
 
+export let EMOJI_ID = emojiList[0];
+
 function setBoxEmoji() {
     const emojiBox = document.createElement('div');
     emojiBox.classList.add('emoji-box');
@@ -151,12 +153,11 @@ function emojiSelector() {
                 emoji.classList.add('emoji-selected');
                 itemEmoji.src = `assets/icons/emojis/svg/${emoji.getAttribute('value')}`
                 item.setAttribute('emoji', emoji.getAttribute('value'))
+                EMOJI_ID = emoji.getAttribute('value');
         })
     })
     
     item.append(itemEmoji);
-    
-    
 }
 
 
