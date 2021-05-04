@@ -1,6 +1,7 @@
 import { API_URL, AUTH_TOKEN } from "../utils/constants.js";
 import { getGET } from "../utils/root.js";
 
+export let author;
 export const fetch_post = (title_input, content_input, date_input, tab_title_input, difficulty, emoji) => {
     const post_id = getGET().id;
     const API_POST_URL = `${API_URL}posts/:id/`
@@ -13,6 +14,7 @@ export const fetch_post = (title_input, content_input, date_input, tab_title_inp
     })
     .then(response => response.json())
     .then(data => {
+        document.cookie = `postAuthor=${data.user.username}`;
         if(title_input.type === 'text') {
             title_input.value = data.title;
         } else {

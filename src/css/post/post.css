@@ -36,11 +36,7 @@
 .post-info__title-container {
     display: flex; 
     align-items: baseline;
-}
-.post-info__title-container .tag {
-    margin: 0 30px;
-    text-decoration: none;
-    padding: 5px
+    margin-bottom: 10px;
 }
 .post-content {
     width: 100%;

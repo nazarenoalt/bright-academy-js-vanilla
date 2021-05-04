@@ -27,13 +27,7 @@ signupForm.addEventListener('submit', (event) => {
             if (rejected === true) {
                 checkUserData(data);
             } else {
-                console.log(data)
-                document.cookie = `access_token=${data.access_token}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `auth=true; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `username=${data.user.username}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `first_name=${data.user.profile.first_name}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                document.cookie = `profile_type=${data.user.profile.profile_type}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
-                window.location = `../../../index.html`
+                window.location = `../../../registered.html`
             }
         })
         .catch(err => console.error(err))
