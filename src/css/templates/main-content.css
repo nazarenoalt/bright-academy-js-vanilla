@@ -15,17 +15,17 @@ min-height: 71vh;
 }
 /*Tags*/
 .tag {
-    padding: 6px 8px;
+    padding: 7px 12px;
     background-color: var(--dark-blue);
     color: var(--white);
     border-radius: 5px;
     border: none;
-    transition: filter .2s;
+    transition: brightness .2s;
     font-size: 1.1rem;
-    padding: 10px;
     margin: 30px auto;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .rounded {
     border-radius: 100px;
@@ -34,6 +34,14 @@ min-height: 71vh;
     font-size: 1.5rem;
     padding: 15px 20px;
 } 
+.transparent {
+    opacity: 60%;
+    transition: opacity .2s;
+}
+.transparent:hover {
+    opacity: 80%;
+    filter: brightness(1)
+}
 .tag[disabled] {
     background-color: var(--moderate-light-gray);
 }

@@ -1,4 +1,4 @@
-class whatsappButton extends HTMLElement {
+class WhatsappButton extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({mode:'open'});
@@ -77,4 +77,4 @@ class whatsappButton extends HTMLElement {
   }
 }
 
-customElements.define('whatsapp-button', whatsappButton);
+customElements.define('whatsapp-button', WhatsappButton);

@@ -20,7 +20,11 @@
 
     <form method="get" class="post-container" id="post_container">
         <section class="post-info">
-        <h2 id="post_title" name="post_title"></h2>
+            <div class="post-info__title-container">
+                <h2 id="post_title" name="post_title"></h2>
+                <edit-button link=""></edit-button>
+            </div>
+
         <time id="post_date" name="post_date"></time>
         </section>
         <section id="post_content" class="post-content"></section>
@@ -79,11 +83,11 @@
 </footer>
 
 <script type="module" src="src/js/index.js"></script>
-<script type="module" src="src/js/post/fetch-post.js"></script>
+<script type="module" src="src/js/post/retrieve-post.js"></script>
 <script type="module" src="src/js/components/header-component.js"></script>
 <script type="module" src="src/js/components/footer-component.js"></script>
 <script type="module" src="src/js/components/sidebar-component.js"></script>
 <script type="module" src="src/js/components/whatsapp-button.js"></script>
-
+<script type="module" src="src/js/components/edit-post-btn.js"></script>
 
 </body>

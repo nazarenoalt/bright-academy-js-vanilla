@@ -1,6 +1,6 @@
 export const getGET = () => {
     let loc = document.location.href;
-    let getString = loc.split('?')[1];
+    let getString = loc.split('?')[1] || '';
     let GET = getString.split('&')
     let get = {}
 

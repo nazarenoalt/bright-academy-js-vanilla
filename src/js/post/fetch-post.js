@@ -1,7 +1,7 @@
 import { API_URL, AUTH_TOKEN } from "../utils/constants.js";
 import { getGET } from "../utils/root.js";
 
-const fetch_post = () => {
+export const fetch_post = (title_input, content_input, date_input, tab_title_input, difficulty, emoji) => {
     const post_id = getGET().id;
     const API_POST_URL = `${API_URL}posts/:id/`
     //post data
@@ -13,13 +13,21 @@ const fetch_post = () => {
     })
     .then(response => response.json())
     .then(data => {
-        post_title.innerHTML = data.title;
-        post_content.innerHTML = data.content;
-        let date = new Date(data.created);
-        post_date.innerHTML = date;
-        html_tab_title.innerHTML = `${data.title} | Bright Academy`;
+        if(title_input.type === 'text') {
+            title_input.value = data.title;
+        } else {
+            title_input.innerHTML = data.title;
+        }
+        content_input.innerHTML = data.content;
+        if (date_input) {
+            let date = new Date(data.created);
+            date_input.innerHTML = date;
+        }
+        if (tab_title_input) tab_title_input.innerHTML = `${data.title} | Bright Academy`;
+        if(difficulty) {
+            difficulty.value = data.difficulty;
+            emoji.src=`assets/icons/emojis/svg/${data.emoji_id}`
+        }
     })
     .catch(err => console.error(err));
 }
-
-fetch_post();

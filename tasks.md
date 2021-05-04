@@ -29,6 +29,8 @@
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited and erased;
 [PENDING] Make "Mis cursos" section
+[PENDING] TAke username and compare if is the same author
+[PENDING] post-editor - when fetch difficulty item color doesn't actualize
 
 [API]
 [EDIT-POST]

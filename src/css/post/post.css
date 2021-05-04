@@ -33,6 +33,15 @@
     border-bottom: 2px solid var(--moderate-light-gray);
 }
 
+.post-info__title-container {
+    display: flex; 
+    align-items: baseline;
+}
+.post-info__title-container .tag {
+    margin: 0 30px;
+    text-decoration: none;
+    padding: 5px
+}
 .post-content {
     width: 100%;
     height: 500px;
