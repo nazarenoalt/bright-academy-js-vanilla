@@ -29,7 +29,6 @@
 [PENDING] burger menu in login, guess and signup
 [PENDING] Posts should can be edited and erased;
 [PENDING] Make "Mis cursos" section
-[PENDING] Uses unauthorized at least they have a level
 
 [API]
 [EDIT-POST]

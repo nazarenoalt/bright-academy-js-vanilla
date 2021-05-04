@@ -6,6 +6,8 @@
     display: grid;
     justify-items: start;
     padding: 5%;
+    grid-template-columns: 1fr;
+    word-break: break-all;
 }
 
 .post-container {
