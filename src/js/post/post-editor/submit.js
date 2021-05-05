@@ -23,6 +23,7 @@ if(typeMethod === 'put') {
             POST_DIFFICULTY,
             ITEM_EMOJI
             )
+            
 }
 
 //preparing to send post

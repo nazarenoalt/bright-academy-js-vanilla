@@ -31,6 +31,7 @@
                 </span>
 
                 <div class="editor" id="editor_container" name="content"></div>
+                <button type="button" id="open_deleting_menu" class="tag">borrar post</button>
 
                 <div class="item-creator">
                     <h3> Diseña un item para la clase</h3>
@@ -44,7 +45,7 @@
                             <option value="I">Intermediate</option>
                             <option value="A">Advanced</option>
                         </select>
-                        <div  class="easy item-background" id="item-background"></div>
+                        <div  class="easy item-background" id="item-background" emoji="111-heart.svg"></div>
                     </div>
                     
                 </div>
@@ -66,6 +67,15 @@
                 <!--Submit Button -->
 
             </form>
+            <div class="delete-post-container">
+                <form class="post-formulary hidden" id="delete_post_formulary">
+                    <h3>¿Estás seguro que querés borrar el post?</h3>
+                    <span>
+                        <input type="submit" id="delete_button" class="tag" name="delete" value="borrar post" />
+                        <button type="button" id="cancel_button" class="tag">cancelar</button>
+                    </span>
+                </form>
+            </div>
         </section>
            
     </section>
@@ -94,6 +104,7 @@
     <script type="module" src="src/js/post/post-editor/ql-editor.js"></script>
     <script type="module" src="src/js/post/post-editor/post-preview.js"></script>
     <script type="module" src="src/js/post/post-editor/submit.js"></script>
+    <script type="module" src="src/js/post/post-editor/delete-post_menu.js"></script>
 
 
 </body>

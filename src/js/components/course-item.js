@@ -96,7 +96,7 @@ class courseItem extends HTMLElement {
                 }
                 
                 /*Color of icons depending of level*/
-                .course-item.B {
+                .course-item.I {
                     background-color: var(--blue);
                     border: 5px solid var(--blue-2);
                 }
@@ -106,7 +106,7 @@ class courseItem extends HTMLElement {
                     border: 5px solid var(--orange-2);
                 }
 
-                .course-item.I {
+                .course-item.B {
                     background-color: var(--green);
                     border: 5px solid var(--green-2);
                 }

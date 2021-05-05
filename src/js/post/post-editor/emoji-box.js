@@ -113,7 +113,6 @@ const emojiList = [
     '112-lipstick.svg',
     '113-sad.svg',
     '114-umbrella.svg',
-
     '115-ribbon.svg',
     '116-sunglasses.svg',
     '117-purse.svg',
@@ -122,7 +121,7 @@ const emojiList = [
     '120-briefcase.svg',
 ]
 
-export let EMOJI_ID = emojiList[0];
+export let EMOJI_ID = emojiList[110];
 
 function setBoxEmoji() {
     const emojiBox = document.createElement('div');

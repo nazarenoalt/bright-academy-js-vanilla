@@ -36,8 +36,36 @@
 .post-title {
     border: 1px solid #ccc;
     margin: 10px;
-    width: 75%;
+    width: auto;
     outline: none;
+}
+#open_deleting_menu {
+    margin-bottom:0;
+}
+#delete_post_formulary {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 450px;
+    height: 200px;
+    padding: 20px;
+    word-break: normal;
+    word-wrap: break-word;
+    background-color: var(--white);
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    z-index: 6;
+}
+#delete_post_formulary.hidden {
+    display: none;
 }
 .post-date {
     outline: none;
