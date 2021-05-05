@@ -42,6 +42,9 @@
 #open_deleting_menu {
     margin-bottom:0;
 }
+#open_deleting_menu.hidden {
+    display: none;
+}
 #delete_post_formulary {
     position: fixed;
     display: flex;

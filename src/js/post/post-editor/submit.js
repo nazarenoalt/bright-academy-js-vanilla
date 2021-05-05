@@ -11,11 +11,12 @@ const POST_DIFFICULTY = document.querySelector('#difficulty');
 const HTML_TAB_TITLE= document.querySelector('#html_tab_title')
 const ITEM_EMOJI = document.querySelector('.item-emoji')
 const typeMethod = getGET().method || 'post';
-
+const DELETE_POST_BUTTON = document.querySelector('#open_deleting_menu');
 //fetching post
 
 if(typeMethod === 'put') {
     POST_API_URL += `${getGET().id}/`
+    DELETE_POST_BUTTON.classList.remove('hidden');
     fetch_post(POST_TITLE,
             POST_CONTENT,
             undefined,
