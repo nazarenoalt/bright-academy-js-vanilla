@@ -21,6 +21,8 @@ const GUEST_PATH = [
     '/signup.html',
     '/guest.html/',
     '/guest.html',
+    '/registered.html',
+    '/registered.html/'
 ]
 //Restricted for registered users
 const RESTRICTED = [

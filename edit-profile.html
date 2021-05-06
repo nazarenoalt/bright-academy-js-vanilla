@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>Editar perfil  | Bright Academy</title>
+    <link rel="stylesheet" href="src/css/user/edit-profile.css">
+</head>
+
+<body class="container loading">
+
+<!--Header charged since import.js-->
+<header class="header" id="header" >
+    <header-component></header-component>
+</header>
+
+<!--Main content-->
+<section class="main-content">
+    <div class="profile-editor-container" >
+
+      <form class="form" id="edit-profile_form">
+        <label for="first_name">Nombre</label>
+        <input type="text" name="first_name">
+        
+        <label for="last_name">Apellido</label>
+        <input type="text" name="last_name">
+
+        <label for="bio">Bio</label>
+        <textarea name="bio" class="bio" placeholder="Inserta una descripción sobre tí"></textarea>
+        <input type="submit" class="tag rounded" value="Cambiar Perfil" id="submit_button">
+      </form>
+</section>
+
+<!--Sidebar charged since import.js-->
+<section class="sidebar" id="sidebar">
+    <sidebar-component></sidebar-component>
+</section>
+
+<!--Footer charged since import.js-->
+<footer class="footer" id="footer" >
+    <footer-component owner="Profesora Camelia Brignole"
+                      address="Direccion: Avenida Siempreviva 742"
+                      contactLink="#"
+    ></footer-component>
+</footer>
+
+<script src="src/js/index.js" type="module"></script>
+<script src="src/js/user/my-account/edit-profile.js" type="module"></script>
+<script type="module" src="src/js/components/header-component.js"></script>
+<script type="module" src="src/js/components/footer-component.js"></script>
+<script type="module" src="src/js/components/sidebar-component.js"></script>
+</body>
