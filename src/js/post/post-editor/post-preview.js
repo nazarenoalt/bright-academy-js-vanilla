@@ -18,18 +18,24 @@ const openPreview = () => {
   PREVIEW_CONTAINER.style.display = 'flex';
   PREVIEW_BACKGROUND.style.display= 'block'
 
-  setTimeout(() => SUBMIT_BUTTON.removeAttribute('disabled'), 3000);
+  const submit_timeout = setTimeout(() => SUBMIT_BUTTON.removeAttribute('disabled'), 3000);
+
+  //Close button event listene
+  CLOSE_BUTTON.addEventListener('click', (ev) => {
+
+    ev.currentTarget.parentNode.style.display = "none";
+    PREVIEW_BACKGROUND.style.display = "none";
+    SUBMIT_BUTTON.setAttribute('disabled', '');
+    clearTimeout(submit_timeout);
+
+  });
 
 }
 
-CLOSE_BUTTON.addEventListener('click', (ev) => {
 
-  ev.currentTarget.parentNode.style.display = "none";
-  PREVIEW_BACKGROUND.style.display = "none";
-
-});
 
 const checkConditions = () => {
+  
   if(POST_CONTENT.textContent.length >= 140 && POST_TITLE.value.length > 4) {
     if(warningTextExists('min-char')) {
       deleteWarningText('min-char');

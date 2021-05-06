@@ -3,6 +3,7 @@ import { getGET } from "../utils/root.js";
 
 export let author;
 export const fetch_post = (title_input, content_input, date_input, tab_title_input, difficulty, emoji) => {
+
     const post_id = getGET().id;
     const API_POST_URL = `${API_URL}posts/:id/`
     //post data
@@ -33,4 +34,5 @@ export const fetch_post = (title_input, content_input, date_input, tab_title_inp
         }
     })
     .catch(err => console.error(err));
+    
 }

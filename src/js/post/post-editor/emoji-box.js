@@ -124,6 +124,7 @@ const emojiList = [
 export let EMOJI_ID = emojiList[110];
 
 function setBoxEmoji() {
+
     const emojiBox = document.createElement('div');
     emojiBox.classList.add('emoji-box');
     emojiBox.setAttribute('id','emoji_box')
@@ -137,9 +138,11 @@ function setBoxEmoji() {
     })
 
     emoji_box_container.append(emojiBox);
+    
 }
 
 function emojiSelector() {
+
     const emojis = document.querySelectorAll('.emoji');
     const item = document.querySelector('#item-background');
 
@@ -157,6 +160,7 @@ function emojiSelector() {
     })
     
     item.append(itemEmoji);
+
 }
 
 

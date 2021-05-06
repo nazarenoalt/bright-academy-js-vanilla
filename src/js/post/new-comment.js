@@ -7,6 +7,7 @@ number_comments.innerHTML = num_comments;
 comment_input.addEventListener('input', charLimit);
 
 function charLimit () {
+    
     const commentLength = comment_input.value.length;
     char_counter.innerHTML = counter - commentLength;
     
@@ -17,5 +18,6 @@ function charLimit () {
         char_counter.classList.remove('limit-exceeded')
         new_comment_submit.removeAttribute('disabled');
     }
+
 }
 

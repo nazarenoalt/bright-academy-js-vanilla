@@ -53,6 +53,7 @@
                 <a id="preview-button" class="preview-button tag rounded medium-size">Mostrar previa del contenido</a>
 
                 <div class="element-background" id="preview_background"></div>
+
                 <section class="preview-container" id="preview-container">
                     <a class="tag close-button" id="close-button">cerrar</a>
                     
@@ -61,17 +62,17 @@
                         <time id="preview-date"></time>
                     </div>
                     <div class="post-content" id="preview-content"></div>
-                    
+
+                    <!--Submit Button -->
                     <input type="submit" id="submit-button" class="submit-button tag rounded medium-size" name="submit" value="Enviar Post" disabled />
                 </section>
-                <!--Submit Button -->
 
             </form>
             <div class="delete-post-container">
                 <form class="post-formulary hidden" id="delete_post_formulary">
                     <h3>¿Estás seguro que querés borrar el post?</h3>
                     <span>
-                        <input type="submit" id="delete_button" class="tag" name="delete" value="borrar post" />
+                        <input type="submit" id="delete_button" class="tag" name="delete" value="borrar post" disabled/>
                         <button type="button" id="cancel_button" class="tag">cancelar</button>
                     </span>
                 </form>
