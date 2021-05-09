@@ -1,9 +1,12 @@
+import { addWarningText, warningTextExists, deleteWarningText } from '../utils/warning-text.js'
 const loginForm = document.querySelector('#login-form');
+const login_button = document.querySelector('#login-button');
 const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
 
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(loginForm);
+    
     fetch(login_URL, { method: 'POST', body: formData })
         .then(response => {
             if(response.ok) {
@@ -20,5 +23,8 @@ loginForm.addEventListener('submit', (event) => {
             document.cookie = `profile_type=${data.user.profile.profile_type}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
             window.location = `../../../index.html`
         })
-        .catch(err => console.error(err));
+        .catch(err => {
+            console.error(err)
+            addWarningText('El usuario y/o contraseña no es correcto o tu usuario aun no está habilitado', login_button);
+        });
 })

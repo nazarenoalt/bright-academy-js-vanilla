@@ -3,7 +3,6 @@ import { checkUserData, checkLength } from "./checking.js"
 
 const signupForm = document.querySelector('#signup-form');
 const signup_URL = `${API_URL}users/signup/`;
-
 signupForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
