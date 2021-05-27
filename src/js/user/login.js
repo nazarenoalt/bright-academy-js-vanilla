@@ -1,7 +1,7 @@
 import { addWarningText, warningTextExists, deleteWarningText } from '../utils/warning-text.js'
 const loginForm = document.querySelector('#login-form');
 const login_button = document.querySelector('#login-button');
-const login_URL = 'http://brightacademy.pythonanywhere.com/api/users/login/';
+const login_URL = 'https://brightacademy.pythonanywhere.com/api/users/login/';
 
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
