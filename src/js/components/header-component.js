@@ -10,7 +10,7 @@ class headerComponent extends HTMLElement {
             <div class="component">
                 <div class="logo-container" id="container">
                     <a href="index.html">
-                        <img src="https://nazarenoalt.github.io/bright-academy/assets/img/logo.jpg" alt="Bright Academy">
+                        <img src="https://bright-academy.netlify.app/assets/img/logo.jpg" alt="Bright Academy">
                     </a>
                 </div>
                 <div class="menu" id="menu">
@@ -19,7 +19,7 @@ class headerComponent extends HTMLElement {
             
                         <path fill="[color]" d="...">    
                     -->
-                        <img src="https://nazarenoalt.github.io/bright-academy/assets/icons/burger-menu.svg" alt="menu">
+                        <img src="https://bright-academy.netlify.app/assets/icons/burger-menu.svg" alt="menu">
                 </div>
             </div>
             ${this.getStyle()}
