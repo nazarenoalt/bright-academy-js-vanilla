@@ -3,7 +3,7 @@ import { API_URL } from '../utils/constants.js'
 
 const loginForm = document.querySelector('#login-form');
 const login_button = document.querySelector('#login-button');
-const login_URL = `${API_URL}/users/login/`;
+const login_URL = `${API_URL}users/login/`;
 
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();

@@ -68,6 +68,9 @@ class sidebarComponent extends HTMLElement {
                             <a href="${ORIGIN_ROOT}/courses-list.html">Lista de clases</a>
                         </li>
                         <li>
+                            <a href="${ORIGIN_ROOT}/users.html">Usuarios</a>
+                        </li>
+                        <li>
                             <a href="http://brightacademy.pythonanywhere.com/admin/">Panel de Control</a>
                         </li>
                         <li id="disconnect_button">
