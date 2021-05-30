@@ -31,7 +31,6 @@ const formData = new FormData();
 
 const sendPost = (ev) => {
 
-  console.log(typeMethod);
   ev.preventDefault()
   formData.append('title', POST_TITLE.value)
   formData.append('content', POST_CONTENT.innerHTML)
