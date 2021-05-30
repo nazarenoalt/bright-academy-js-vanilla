@@ -12,7 +12,9 @@ form.addEventListener('submit', (e) => {
   
   fetch(URL, {
     method: 'patch',
-    body: formData,
+    body: {
+      'bio': 'holis'
+    },
     headers: {
       Authorization: `Token ${AUTH_TOKEN}`,
       'Content-Type': 'application/json'
