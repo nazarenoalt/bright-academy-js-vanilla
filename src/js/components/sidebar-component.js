@@ -65,9 +65,6 @@ class sidebarComponent extends HTMLElement {
                             <a href="${ORIGIN_ROOT}/post-editor.html">Nueva clase</a>
                         </li>
                         <li>
-                            <a href="${ORIGIN_ROOT}/courses-list.html">Lista de clases</a>
-                        </li>
-                        <li>
                             <a href="${ORIGIN_ROOT}/users.html">Usuarios</a>
                         </li>
                         <li>
