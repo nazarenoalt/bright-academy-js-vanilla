@@ -65,7 +65,7 @@ class sidebarComponent extends HTMLElement {
                             <a href="${ORIGIN_ROOT}/post-editor.html">Nueva clase</a>
                         </li>
                         <li>
-                            <a href="${ORIGIN_ROOT}/users.html">Usuarios</a>
+                            <a href="${ORIGIN_ROOT}/users-list.html">Usuarios</a>
                         </li>
                         <li>
                             <a href="http://brightacademy.pythonanywhere.com/admin/">Panel de Control</a>
