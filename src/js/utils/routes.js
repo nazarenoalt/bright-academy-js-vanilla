@@ -22,7 +22,6 @@ const GUEST_PATH = [
       '/signup.html',
       '/guest.html/',
       '/guest.html',
-      '/users-list.html',
   ]
   
 
@@ -47,7 +46,6 @@ const routes = () => {
   
   const PAGES = detectingRoutes();
 
-  if(!PAGES.includes(PATH)) window.location = `${ORIGIN_ROOT}/error404.html`;
   if (GUEST_PATH.includes(PATH)) {
       if (RESTRICTED.includes(PATH))
       {
