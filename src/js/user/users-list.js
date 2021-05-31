@@ -20,13 +20,15 @@ const generateUsersList = () => {
       const td_name = document.createElement('td');
       td_name.innerHTML = user.username;
       const td_role = document.createElement('td');
+      td_role.setAttribute('id', 'edit_role');
       td_role.innerHTML = `
         <a class="box-opener edit-role" id="edit-role">${user.profile.profile_type}</a>
       `;
 
       const td_level = document.createElement('td');
+      td_level.setAttribute('id', 'edit_level');
       td_level.innerHTML =  `
-        <a class="box-opener edit-level" id="edit-level">${user.profile.level}</a>
+        <a class="box-opener edit-level">${user.profile.level}</a>
       `;
 
       user_tr.append(td_name, td_role, td_level)

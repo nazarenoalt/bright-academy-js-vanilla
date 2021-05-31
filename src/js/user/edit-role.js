@@ -1,4 +1,4 @@
-const button = document.querySelector('#edit-role');
+const button = document.querySelector('#edit_role');
 const container = document.querySelector('.main-section');
 
 button.addEventListener('click', () => {
