@@ -18,11 +18,16 @@ const generateUsersList = () => {
       const user_tr = document.createElement('tr');
 
       const td_name = document.createElement('td');
-      td_name.innerText = user.username;
+      td_name.innerHTML = user.username;
       const td_role = document.createElement('td');
-      td_role.innerText = user.profile.profile_type;
+      td_role.innerHTML = `
+        <a class="anchor edit-role" id="edit-role">user.profile.profile_type</a>
+      `;
+
       const td_level = document.createElement('td');
-      td_level.innerText = user.profile.level;
+      td_level.innerHTML =  `
+        <a class="anchor edit-level" id="edit-level">user.profile.level</a>
+      `;
 
       user_tr.append(td_name, td_role, td_level)
       table.append(user_tr);
