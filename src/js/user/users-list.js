@@ -13,3 +13,5 @@ const generateUsersList = () => {
       data.map(user => console.log(user))
     })
 }
+
+generateUsersList();
