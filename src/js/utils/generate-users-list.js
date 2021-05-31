@@ -4,7 +4,7 @@ const generateUsersList = () => {
   const URL = `${API_URL}users/`;
 
   fetch(URL, {
-    Headers: {
+    headers: {
       Authorization: `Token ${AUTH_TOKEN}`
     }
   })
