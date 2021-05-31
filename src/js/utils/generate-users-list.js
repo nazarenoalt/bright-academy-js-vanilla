@@ -12,3 +12,5 @@ const generateUsersList = () => {
     .then(data => console.log(data));
 
 }
+
+export default generateUsersList;
