@@ -1,3 +1,5 @@
 import generateUsersList from '../utils/generate-users-list.js'
 
-generateUsersList();
+const list = generateUsersList();
+
+console.log("users list: "+ list)

@@ -9,8 +9,6 @@ const generateUsersList = () => {
     }
   })
     .then(response => response.json())
-    .then(data => console.log(data));
-
 }
 
 export default generateUsersList;
