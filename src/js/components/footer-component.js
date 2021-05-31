@@ -12,16 +12,13 @@ class footerComponent extends HTMLElement {
         template.innerHTML = `
             <div class="component">
                 <div class="first-footer box-footer">
-                <h3>${this.owner}</h3>
-                <p>${this.address}</p>
-                   
-                </ul>
-        
+                    <h3>${this.owner}</h3>
                 </div>
+
                 <div class="second-footer box-footer">
                 <ul>
                         <li>
-                            <a href="${this.contactLink || "#"}">Redes y Contacto</a>
+                            <a href="#">Redes y Contacto</a>
                         </li>
                 </ul>
                 <div class="leyenda">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

@@ -10,48 +10,45 @@
 
 <body class="container loading">
 
-<!--Header charged since import.js-->
-<header class="header" id="header" >
-    <header-component></header-component>
-</header>
+    <!--Header charged since import.js-->
+    <header class="header" id="header" >
+        <header-component></header-component>
+    </header>
 
-<!--Main content-->
-<section class="main-content">
+    <!--Main content-->
+    <section class="main-content">
 
-    <form id="level_form">
-        <select name="level-selector" id="level-selector">
-            <option value="B">Beginner</option>
-            <option value="I">Intermediate</option>
-            <option value="A">Elementary</option>
-            <button type="submit" class="tag" id="submit_level">cambiar nivel</button>
-        </select>
-    </form>
-   
-    <div class="list-container" id="list_container">
-        
-    </div>
-</section>
+        <form id="level_form">
+            <select name="level-selector" id="level-selector">
+                <option value="B">Beginner</option>
+                <option value="I">Intermediate</option>
+                <option value="A">Elementary</option>
+                <button type="submit" class="tag" id="submit_level">cambiar nivel</button>
+            </select>
+        </form>
+    
+        <div class="list-container" id="list_container">
+            
+        </div>
+    </section>
 
-<!--Sidebar charged since import.js-->
-<section class="sidebar" id="sidebar">
-    <sidebar-component></sidebar-component>
-</section>
+    <!--Sidebar charged since import.js-->
+    <section class="sidebar" id="sidebar">
+        <sidebar-component></sidebar-component>
+    </section>
 
-<!--Footer charged since import.js-->
-<footer class="footer" id="footer" >
-    <footer-component owner="Profesora Camelia Brignole"
-                      address="Direccion: Avenida Siempreviva 742"
-                      contactLink="#"
-    ></footer-component>
-</footer>
+    <!--Footer charged since import.js-->
+    <footer class="footer" id="footer" >
+        <footer-component></footer-component>
+    </footer>
 
-<!--General scripts-->
-<script src="src/js/index.js" type="module"></script>
-<script type="module" src="src/js/components/header-component.js"></script>
-<script type="module" src="src/js/components/footer-component.js"></script>
-<script type="module" src="src/js/components/sidebar-component.js"></script>
+    <!--General scripts-->
+    <script src="src/js/index.js" type="module"></script>
+    <script type="module" src="src/js/components/header-component.js"></script>
+    <script type="module" src="src/js/components/footer-component.js"></script>
+    <script type="module" src="src/js/components/sidebar-component.js"></script>
 
-<!--Page scripts-->
-<script type="module" src="src/js/user/users-list.js"></script>
-<script type="module" src="src/js/user/edit-role.js"></script>
+    <!--Page scripts-->
+    <script type="module" src="src/js/user/users-list.js"></script>
+    <script type="module" src="src/js/user/edit-role.js"></script>
 </body>

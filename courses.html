@@ -10,84 +10,81 @@
 
 <body class="container loading">
 
-<!--Header charged since import.js-->
-<header class="header" id="header">
-    <header-component></header-component>
-</header>
+    <!--Header charged since import.js-->
+    <header class="header" id="header">
+        <header-component></header-component>
+    </header>
 
-<!--Main content-->
-<section class="main-content">
+    <!--Main content-->
+    <section class="main-content">
 
-    <form method="get" class="post-container" id="post_container">
-        <section class="post-info">
-            <div class="post-info__title-container">
-                <h2 id="post_title" name="post_title"></h2>
-                <edit-button button_value="Editar Post" button_method="put"></edit-button>
-            </div>
+        <form method="get" class="post-container" id="post_container">
+            <section class="post-info">
+                <div class="post-info__title-container">
+                    <h2 id="post_title" name="post_title"></h2>
+                    <edit-button button_value="Editar Post" button_method="put"></edit-button>
+                </div>
 
-        <time id="post_date" name="post_date"></time>
-        </section>
-        <section id="post_content" class="post-content"></section>
-    </form>
-
-    <whatsapp-button link="https://api.whatsapp.com/send?phone=543644724359"
-                    label="¿Tenes dudas? Consultame!"    
-    ></whatsapp-button>
-
-    <!-- <section class="comments-container">
-        <h3>Publicar un comentario</h3>
-        
-        <form action="post" class="new-comment">
-            <textarea class="comment-input"
-                      id="comment_input"                      placeholder="tienes alguna duda? publicala aquí"
-                      autocapitalize="sentences"
-                      autocomplete="on"
-                      name="comment_input"
-                      required
-                      ></textarea>
-                      <p class="char_counter" id="char_counter">500</p>
-            <button class="submit-button tag" id="new_comment_submit">Publicar</button>
+            <time id="post_date" name="post_date"></time>
+            </section>
+            <section id="post_content" class="post-content"></section>
         </form>
 
-        <div class="comments-track">
-            <p>Comentarios: <span id="number_comments"></span></p>
-        </div>
+        <whatsapp-button link="https://api.whatsapp.com/send?phone=543644724359"
+                        label="¿Tenes dudas? Consultame!"    
+        ></whatsapp-button>
 
-        <div class="comment">
-            <div class="comment__user-info">
-                <a href="#">
-                    <figure class="comment__img-container">
-                        <img class="comment__user-img" src="assets/icons/emojis/svg/020-cat-7.svg" alt="">
-                    </figure>
-                </a>
-                <a class="comment__user-name" href="#">Emilio</a>
+        <!-- <section class="comments-container">
+            <h3>Publicar un comentario</h3>
+            
+            <form action="post" class="new-comment">
+                <textarea class="comment-input"
+                        id="comment_input"                      placeholder="tienes alguna duda? publicala aquí"
+                        autocapitalize="sentences"
+                        autocomplete="on"
+                        name="comment_input"
+                        required
+                        ></textarea>
+                        <p class="char_counter" id="char_counter">500</p>
+                <button class="submit-button tag" id="new_comment_submit">Publicar</button>
+            </form>
+
+            <div class="comments-track">
+                <p>Comentarios: <span id="number_comments"></span></p>
             </div>
-            <div class="comment__content" href="#">test</div>
-        </div>        
+
+            <div class="comment">
+                <div class="comment__user-info">
+                    <a href="#">
+                        <figure class="comment__img-container">
+                            <img class="comment__user-img" src="assets/icons/emojis/svg/020-cat-7.svg" alt="">
+                        </figure>
+                    </a>
+                    <a class="comment__user-name" href="#">Emilio</a>
+                </div>
+                <div class="comment__content" href="#">test</div>
+            </div>        
+        </section>
+
+    -->
+    </section> 
+
+    <!--Sidebar charged since import.js-->
+    <section class="sidebar" id="sidebar">
+        <sidebar-component></sidebar-component>
     </section>
 
--->
-</section> 
+    <!--Footer charged since import.js-->
+    <footer class="footer" id="footer" >
+        <footer-component></footer-component>
+    </footer>
 
-<!--Sidebar charged since import.js-->
-<section class="sidebar" id="sidebar">
-    <sidebar-component></sidebar-component>
-</section>
-
-<!--Footer charged since import.js-->
-<footer class="footer" id="footer" >
-    <footer-component owner="Profesora Camelia Brignole"
-                      address="Direccion: Avenida Siempreviva 742"
-                      contactLink="#"
-    ></footer-component>
-</footer>
-
-<script type="module" src="src/js/index.js"></script>
-<script type="module" src="src/js/post/retrieve-post.js"></script>
-<script type="module" src="src/js/components/header-component.js"></script>
-<script type="module" src="src/js/components/footer-component.js"></script>
-<script type="module" src="src/js/components/sidebar-component.js"></script>
-<script type="module" src="src/js/components/whatsapp-button.js"></script>
-<script type="module" src="src/js/components/post-button.js"></script>
+    <script type="module" src="src/js/index.js"></script>
+    <script type="module" src="src/js/post/retrieve-post.js"></script>
+    <script type="module" src="src/js/components/header-component.js"></script>
+    <script type="module" src="src/js/components/footer-component.js"></script>
+    <script type="module" src="src/js/components/sidebar-component.js"></script>
+    <script type="module" src="src/js/components/whatsapp-button.js"></script>
+    <script type="module" src="src/js/components/post-button.js"></script>
 
 </body>
