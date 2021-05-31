@@ -2,9 +2,7 @@ class footerComponent extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
-        this.owner = this.getAttribute('owner');
-        this.address = this.getAttribute('address');
-        this.contactLink = this.getAttribute('contactLink');
+        this.owner = "Camelia Brignole"
     }
 
     getTemplate() {
