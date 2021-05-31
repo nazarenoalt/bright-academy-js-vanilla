@@ -1,8 +1,16 @@
 @import '../templates/general.css';
 @import '../templates/main-content.css';
 
-
+.list-container {
+  font-size: 1.2rem;
+}
 .box-opener {
-  margin-left: 30px;
   cursor: pointer;
+  color: var(--dark-blue);
+  font-size: 1.2rem;
+}
+
+.list-container td {
+  padding: 5px 30px;
+  border: 1px solid var(--dark-blue)
 }
