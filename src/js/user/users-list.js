@@ -2,7 +2,7 @@ import { API_URL, AUTH_TOKEN } from '../utils/constants.js';
 
 const generateUsersList = () => {
   const URL = `${API_URL}users/`;
-  
+  const container = document.querySelector("#list_container")
   fetch(URL, {
     headers: {
       Authorization: `Token ${AUTH_TOKEN}`
@@ -25,10 +25,9 @@ const generateUsersList = () => {
       td_level.innerText = user.profile.level;
 
       user_tr.append(td_name, td_role, td_level)
-      table.append(user_td);
+      table.append(user_tr);
     })
-
-    
+    container.append(table);
   })
 }
 
