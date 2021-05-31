@@ -1,6 +1,7 @@
 @import '../templates/general.css';
 @import '../templates/main-content.css';
 
+
 .box-opener {
   margin-left: 30px;
   cursor: pointer;
