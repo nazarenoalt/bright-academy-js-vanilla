@@ -83,9 +83,6 @@ class sidebarComponent extends HTMLElement {
                         <li>
                             <a href="${ORIGIN_ROOT}/my-account.html">Mi cuenta</a>
                         </li>
-                        <li>
-                            <a href="${ORIGIN_ROOT}/my-courses.html">Mis clases</a>
-                        </li>
                         <li id="disconnect_button">
                             <a href="">Desconectarse</a>
                         </li>
