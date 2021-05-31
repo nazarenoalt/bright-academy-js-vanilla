@@ -2,6 +2,13 @@ const button = document.querySelector('#edit_role');
 const container = document.querySelector('.main-section');
 
 button.addEventListener('click', () => {
+  
+  const role = document.querySelector("#role_form")
+
+  if(document.querySelector('#role_form')) {
+    container.removeChild(role);
+  }
+
   const form = document.createElement('form')
   form.setAttribute('id', "role_form")
   form.innerHTML = `
@@ -12,9 +19,13 @@ button.addEventListener('click', () => {
     <button type="submit" class="tag" id="submit_role">cambiar rol</button>
   `
   container.append('form')
-  const role_form = document.querySelector('#role_form');
-  role_form.addEventListener('submit', e => {
-    e.preventDefault();
-    console.log('sale submit');
-  })
+  formEventListener();
 })
+
+const formEventListener = () => {
+    const role_form = document.querySelector('#role_form');
+    role_form.addEventListener('submit', e => {
+      e.preventDefault();
+      console.log('sale submit');
+    })
+}
