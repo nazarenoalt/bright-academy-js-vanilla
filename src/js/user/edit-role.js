@@ -1,8 +1,15 @@
 const button = document.querySelector('#edit_role');
 const container = document.querySelector('.main-section');
 
+const formEventListener = () => {
+    const role_form = document.querySelector('#role_form');
+    role_form.addEventListener('submit', e => {
+      e.preventDefault();
+      console.log('sale submit');
+    })
+}
+
 button.addEventListener('click', () => {
-  
   const role = document.querySelector("#role_form")
 
   if(document.querySelector('#role_form')) {
@@ -22,10 +29,3 @@ button.addEventListener('click', () => {
   formEventListener();
 })
 
-const formEventListener = () => {
-    const role_form = document.querySelector('#role_form');
-    role_form.addEventListener('submit', e => {
-      e.preventDefault();
-      console.log('sale submit');
-    })
-}
